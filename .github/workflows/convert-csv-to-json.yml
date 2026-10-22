@@ -1,77 +1,83 @@
-name: Convert Upstream CSV to JSON
+name: Fetch and Convert CSV to JSON
 
 on:
-  workflow_dispatch: # Actionsタブから手動実行
-  schedule:
-    - cron: '0 0 * * *' # 毎日深夜0時に自動更新（必要に応じて変更可能）
+  workflow_dispatch: # 手動で実行できるボタンを配置
+  # schedule:
+  #   - cron: '0 0 * * *' # 毎日0時(UTC)に自動更新したい場合はコメントアウトを外す
+
+permissions:
+  contents: write # リポジトリへのプッシュ権限を付与
 
 jobs:
-  convert-data:
+  convert-and-save:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # 変換結果のコミット・プッシュに必要
-
     steps:
-      - name: Checkout repository
+      - name: Checkout current repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.12'
 
-      - name: Convert CSV to JSON
+      - name: Download CSV files from htvoffcial_paper
         run: |
-          python3 - << 'EOF'
+          # 別のリポジトリからRawデータを直接ダウンロード (※mainブランチを想定)
+          curl -sL "https://raw.githubusercontent.com/htvoffcial/htvoffcial_paper/main/data/ltempl.csv" -o ltempl.csv
+          curl -sL "https://raw.githubusercontent.com/htvoffcial/htvoffcial_paper/main/data/words.csv" -o words.csv
+
+      - name: Convert CSV to JSON (Optimized for speed)
+        run: |
+          python - <<'EOF'
           import csv
           import json
           import os
-          import urllib.request
+          from collections import defaultdict
 
-          # 参照元リポジトリのデータURL
-          BASE_URL = "https://raw.githubusercontent.com/htvoffcial/htvoffcial_paper/main/data"
-          LTEMPL_URL = f"{BASE_URL}/ltempl.csv"
-          WORDS_URL = f"{BASE_URL}/words.csv"
+          # 保存先ディレクトリを確保
+          os.makedirs('data', exist_ok=True)
 
-          # 出力先ディレクトリの作成
-          os.makedirs("data", exist_ok=True)
-
-          # 1. ltempl.csv の処理 -> data/template.json
-          print("Processing ltempl.csv...")
-          with urllib.request.urlopen(LTEMPL_URL) as res:
-              lines = [line.decode("utf-8") for line in res.readlines()]
-              reader = csv.DictReader(lines)
-              templates = [row for row in reader]
-
-          with open("data/template.json", "w", encoding="utf-8") as f:
-              json.dump(templates, f, ensure_ascii=False, indent=2)
-
-          # 2. words.csv の処理 -> data/{pos}-words.json
-          print("Processing words.csv...")
-          with urllib.request.urlopen(WORDS_URL) as res:
-              lines = [line.decode("utf-8") for line in res.readlines()]
-              reader = csv.DictReader(lines)
-              
-              pos_dict = {}
+          # 1. words.csv の処理
+          words_by_pos = defaultdict(list)
+          with open('words.csv', 'r', encoding='utf-8') as f:
+              reader = csv.DictReader(f)
               for row in reader:
-                  pos = row["pos"].strip()
-                  word = row["word"].strip()
-                  if pos not in pos_dict:
-                      pos_dict[pos] = []
-                  pos_dict[pos].append(word)
+                  words_by_pos[row['pos']].append(row['word'])
 
-          for pos, words in pos_dict.items():
-              output_path = f"data/{pos}-words.json"
-              print(f"Saving {output_path}...")
-              with open(output_path, "w", encoding="utf-8") as f:
-                  json.dump(words, f, ensure_ascii=False, indent=2)
+          # 品詞(pos)ごとに独立したJSONファイルとして保存
+          # 配列のみの構造にするため、ランダムアクセス(random.choice)が最速になります
+          for pos, words in words_by_pos.items():
+              with open(f'data/{pos}-words.json', 'w', encoding='utf-8') as f:
+                  # separators=(',', ':') で余白を消し、ファイルサイズを最小化(高速読み込み対応)
+                  json.dump(words, f, ensure_ascii=False, separators=(',', ':'))
 
-          print("Conversion completed successfully!")
+          # 2. ltempl.csv の処理
+          templates_by_type = defaultdict(list)
+          with open('ltempl.csv', 'r', encoding='utf-8') as f:
+              reader = csv.DictReader(f)
+              for row in reader:
+                  templates_by_type[row['type']].append(row['template'])
+
+          # type をキーとした辞書(Dict)型のJSONに変換
+          # プログラム側で data["title"] のように O(1) で即座に配列を取り出せる構造
+          with open('data/template.json', 'w', encoding='utf-8') as f:
+              json.dump(templates_by_type, f, ensure_ascii=False, separators=(',', ':'))
           EOF
 
-      - name: Commit and Push generated JSON files
+      - name: Cleanup temporary CSVs
+        run: |
+          rm ltempl.csv words.csv
+
+      - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update JSON data from htvoffcial_paper" && git push)
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          
+          # 変更がある場合のみコミットとプッシュを行う
+          if git diff --staged --quiet; then
+            echo "No changes detected. Skipping commit."
+          else
+            git commit -m "chore: update JSON data from htvoffcial_paper CSVs"
+            git push
+          fi
