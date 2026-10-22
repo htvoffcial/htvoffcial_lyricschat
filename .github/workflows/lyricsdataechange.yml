@@ -1,0 +1,116 @@
+
+name: Convert CSV to JSON
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/convert-csv-to-json.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: csv-to-json
+  cancel-in-progress: true
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout destination repository
+        uses: actions/checkout@v4
+        with:
+          path: destination
+
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          repository: htvoffcial/htvoffcial_paper
+          ref: main
+          path: source
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          sparse-checkout: |
+            data/ltempl.csv
+            data/words.csv
+          sparse-checkout-cone-mode: false
+
+      - name: Convert CSV files to JSON
+        env:
+          SOURCE_DIR: source/data
+          OUTPUT_DIR: destination/data
+        run: |
+          python - <<'PY'
+          import csv
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          source = Path(os.environ["SOURCE_DIR"])
+          output = Path(os.environ["OUTPUT_DIR"])
+          output.mkdir(parents=True, exist_ok=True)
+
+          def read_csv(filename):
+              with (source / filename).open(
+                  "r", encoding="utf-8-sig", newline=""
+              ) as f:
+                  return list(csv.DictReader(f, skipinitialspace=True))
+
+          def write_json(filename, data):
+              path = output / filename
+              path.write_text(
+                  json.dumps(
+                      data,
+                      ensure_ascii=False,
+                      separators=(",", ":")
+                  ) + "\n",
+                  encoding="utf-8"
+              )
+              print(f"{path}: {len(data)} records")
+
+          # Templates: [{ "type": "title", "template": "..." }, ...]
+          templates = []
+          for row in read_csv("ltempl.csv"):
+              kind = (row.get("type") or "").strip()
+              template = (row.get("template") or "").strip()
+              if kind and template:
+                  templates.append({
+                      "type": kind,
+                      "template": template
+                  })
+
+          write_json("template.json", templates)
+
+          # Words: one JSON array per part of speech.
+          words_by_pos = {}
+          for row in read_csv("words.csv"):
+              word = (row.get("word") or "").strip()
+              pos = (row.get("pos") or "").strip()
+              if not word or not pos:
+                  continue
+              if not re.fullmatch(r"[A-Za-z0-9_-]+", pos):
+                  raise ValueError(f"Invalid part of speech: {pos!r}")
+              words_by_pos.setdefault(pos, []).append(word)
+
+          for pos, words in sorted(words_by_pos.items()):
+              # Deduplicate while preserving original order.
+              words = list(dict.fromkeys(words))
+              write_json(f"{pos}-words.json", words)
+
+          print("CSV to JSON conversion completed.")
+          PY
+
+      - name: Commit and push generated JSON
+        working-directory: destination
+        run: |
+          git add data/template.json data/*-words.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Build optimized JSON from CSV"
+          git push
