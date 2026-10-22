@@ -1,116 +1,77 @@
-
-name: Convert CSV to JSON
+name: Convert Upstream CSV to JSON
 
 on:
-  workflow_dispatch:
-  push:
-    paths:
-      - ".github/workflows/convert-csv-to-json.yml"
-
-permissions:
-  contents: write
-
-concurrency:
-  group: csv-to-json
-  cancel-in-progress: true
+  workflow_dispatch: # Actionsタブから手動実行
+  schedule:
+    - cron: '0 0 * * *' # 毎日深夜0時に自動更新（必要に応じて変更可能）
 
 jobs:
-  convert:
+  convert-data:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 変換結果のコミット・プッシュに必要
 
     steps:
-      - name: Checkout destination repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          path: destination
 
-      - name: Checkout source repository
-        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          repository: htvoffcial/htvoffcial_paper
-          ref: main
-          path: source
-          token: ${{ secrets.SOURCE_REPO_TOKEN }}
-          sparse-checkout: |
-            data/ltempl.csv
-            data/words.csv
-          sparse-checkout-cone-mode: false
+          python-version: '3.10'
 
-      - name: Convert CSV files to JSON
-        env:
-          SOURCE_DIR: source/data
-          OUTPUT_DIR: destination/data
+      - name: Convert CSV to JSON
         run: |
-          python - <<'PY'
+          python3 - << 'EOF'
           import csv
           import json
           import os
-          import re
-          from pathlib import Path
+          import urllib.request
 
-          source = Path(os.environ["SOURCE_DIR"])
-          output = Path(os.environ["OUTPUT_DIR"])
-          output.mkdir(parents=True, exist_ok=True)
+          # 参照元リポジトリのデータURL
+          BASE_URL = "https://raw.githubusercontent.com/htvoffcial/htvoffcial_paper/main/data"
+          LTEMPL_URL = f"{BASE_URL}/ltempl.csv"
+          WORDS_URL = f"{BASE_URL}/words.csv"
 
-          def read_csv(filename):
-              with (source / filename).open(
-                  "r", encoding="utf-8-sig", newline=""
-              ) as f:
-                  return list(csv.DictReader(f, skipinitialspace=True))
+          # 出力先ディレクトリの作成
+          os.makedirs("data", exist_ok=True)
 
-          def write_json(filename, data):
-              path = output / filename
-              path.write_text(
-                  json.dumps(
-                      data,
-                      ensure_ascii=False,
-                      separators=(",", ":")
-                  ) + "\n",
-                  encoding="utf-8"
-              )
-              print(f"{path}: {len(data)} records")
+          # 1. ltempl.csv の処理 -> data/template.json
+          print("Processing ltempl.csv...")
+          with urllib.request.urlopen(LTEMPL_URL) as res:
+              lines = [line.decode("utf-8") for line in res.readlines()]
+              reader = csv.DictReader(lines)
+              templates = [row for row in reader]
 
-          # Templates: [{ "type": "title", "template": "..." }, ...]
-          templates = []
-          for row in read_csv("ltempl.csv"):
-              kind = (row.get("type") or "").strip()
-              template = (row.get("template") or "").strip()
-              if kind and template:
-                  templates.append({
-                      "type": kind,
-                      "template": template
-                  })
+          with open("data/template.json", "w", encoding="utf-8") as f:
+              json.dump(templates, f, ensure_ascii=False, indent=2)
 
-          write_json("template.json", templates)
+          # 2. words.csv の処理 -> data/{pos}-words.json
+          print("Processing words.csv...")
+          with urllib.request.urlopen(WORDS_URL) as res:
+              lines = [line.decode("utf-8") for line in res.readlines()]
+              reader = csv.DictReader(lines)
+              
+              pos_dict = {}
+              for row in reader:
+                  pos = row["pos"].strip()
+                  word = row["word"].strip()
+                  if pos not in pos_dict:
+                      pos_dict[pos] = []
+                  pos_dict[pos].append(word)
 
-          # Words: one JSON array per part of speech.
-          words_by_pos = {}
-          for row in read_csv("words.csv"):
-              word = (row.get("word") or "").strip()
-              pos = (row.get("pos") or "").strip()
-              if not word or not pos:
-                  continue
-              if not re.fullmatch(r"[A-Za-z0-9_-]+", pos):
-                  raise ValueError(f"Invalid part of speech: {pos!r}")
-              words_by_pos.setdefault(pos, []).append(word)
+          for pos, words in pos_dict.items():
+              output_path = f"data/{pos}-words.json"
+              print(f"Saving {output_path}...")
+              with open(output_path, "w", encoding="utf-8") as f:
+                  json.dump(words, f, ensure_ascii=False, indent=2)
 
-          for pos, words in sorted(words_by_pos.items()):
-              # Deduplicate while preserving original order.
-              words = list(dict.fromkeys(words))
-              write_json(f"{pos}-words.json", words)
+          print("Conversion completed successfully!")
+          EOF
 
-          print("CSV to JSON conversion completed.")
-          PY
-
-      - name: Commit and push generated JSON
-        working-directory: destination
+      - name: Commit and Push generated JSON files
         run: |
-          git add data/template.json data/*-words.json
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Build optimized JSON from CSV"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update JSON data from htvoffcial_paper" && git push)
