@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectorized Chat UI</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; height: 100vh; }
+        #chat-container { width: 100%; max-width: 600px; background: white; display: flex; flex-direction: column; height: 100%; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+        #chat-header { background: #2c3e50; color: white; padding: 15px; text-align: center; font-weight: bold; }
+        #chat-log { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 15px; background: #e5ddd5; }
+        .message-wrapper { display: flex; flex-direction: column; }
+        .message { max-width: 75%; padding: 12px 16px; border-radius: 15px; line-height: 1.4; word-wrap: break-word; white-space: pre-wrap; font-size: 15px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+        .user-msg { align-self: flex-end; background: #dcf8c6; color: #000; border-bottom-right-radius: 4px; }
+        .bot-msg { align-self: flex-start; background: #ffffff; color: #000; border-bottom-left-radius: 4px; }
+        .debug-info { font-size: 0.7em; color: #888; margin-top: 4px; align-self: flex-start; margin-left: 5px; }
+        #input-area { display: flex; padding: 15px; background: #f0f0f0; }
+        #user-input { flex: 1; padding: 12px 20px; border: none; border-radius: 25px; outline: none; font-size: 15px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); }
+        #send-btn { background: #00a884; color: white; border: none; padding: 0 25px; margin-left: 10px; border-radius: 25px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        #send-btn:hover { background: #008f6f; }
+    </style>
+</head>
+<body>
+
+<div id="chat-container">
+    <div id="chat-header">Vectorized Bot (No LLM)</div>
+    <div id="chat-log"></div>
+    <div id="input-area">
+        <input type="text" id="user-input" placeholder="Type a message (e.g. 'tell me a lyric about data')" autocomplete="off" autofocus>
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+
+<script>
+    // データベース
+    const db = {
+        templates: {},
+        words: { N: [], V: [], A: [], ADV: [] },
+        categoryVectors: {} // カテゴリごとの単語出現頻度(BoW)
+    };
+
+    // 初期化関数
+    async function init() {
+        appendMessage('System', 'データベースを読み込んでいます...', 'bot-msg');
+        
+        try {
+            // JSONの読み込み（サーバー環境用）
+            const resT = await fetch('data/template.json');
+            db.templates = await resT.json();
+            
+            for (const pos of ['N', 'V', 'A', 'ADV']) {
+                const res = await fetch(`data/${pos}-words.json`);
+                if (res.ok) db.words[pos] = await res.json();
+            }
+        } catch (e) {
+            // fetch失敗時（fileプロトコル等）のモックデータ（動作確認用フォールバック）
+            console.warn("Fetch failed, using mock data.", e);
+            db.templates = {
+                title: ["Echoes of {N}", "The {A} {N}", "{V}ing in the {N}"],
+                lyric: ["In the core of the {A} {N},\nWe {ADV} {V} the {N}.", "Every {A} {N} will {V},\nAs the {N} {ADV} {V}s."],
+                chat: ["I see you are talking about {N}.", "Let's {ADV} {V} the {A} {N}!"]
+            };
+            db.words.N = ["algorithm", "data", "system", "research", "hypothesis", "world", "song"];
+            db.words.V = ["analyze", "investigate", "sing", "explore", "discover"];
+            db.words.A = ["complex", "smart", "brilliant", "beautiful", "hidden"];
+            db.words.ADV = ["quickly", "silently", "deeply", "carefully"];
+        }
+
+        buildVectors();
+        document.getElementById('chat-log').innerHTML = ''; // クリア
+        appendMessage('Bot', 'Ready! 学習完了しました。入力からベクトルを計算して回答します。', 'bot-msg');
+    }
+
+    // 1. 文章を単語配列に変換（トークナイズ）
+    function tokenize(text) {
+        return text.toLowerCase().replace(/[^\w\s]/g, '').split(/\s+/).filter(w => w.length > 0);
+    }
+
+    // 2. テンプレートからカテゴリごとの特徴ベクトル（BoW）を構築
+    function buildVectors() {
+        for (const [category, texts] of Object.entries(db.templates)) {
+            const vector = {};
+            texts.forEach(text => {
+                // {N} などのタグを除去して純粋な単語だけ抽出
+                const cleanText = text.replace(/\{[A-Z]+\}/g, '');
+                const tokens = tokenize(cleanText);
+                // カテゴリ名自体もキーワードとして重み付け
+                tokens.push(category); 
+                tokens.push(category); 
+                
+                tokens.forEach(token => {
+                    vector[token] = (vector[token] || 0) + 1;
+                });
+            });
+            db.categoryVectors[category] = vector;
+        }
+        console.log("Learned Vectors:", db.categoryVectors);
+    }
+
+    // 3. 2つのベクトルの内積（類似度）を計算
+    function calculateDotProduct(vec1, vec2) {
+        let score = 0;
+        for (const word in vec1) {
+            if (vec2[word]) score += vec1[word] * vec2[word];
+        }
+        return score;
+    }
+
+    // メイン応答処理
+    function generateResponse(userInput) {
+        const userTokens = tokenize(userInput);
+        
+        // A. ユーザー入力のベクトル化
+        const userVector = {};
+        userTokens.forEach(t => userVector[t] = (userVector[t] || 0) + 1);
+
+        // B. 意図の推定（最もスコアの高いカテゴリを探す）
+        let bestCategory = null;
+        let maxScore = -1;
+        
+        for (const [category, catVector] of Object.entries(db.categoryVectors)) {
+            const score = calculateDotProduct(userVector, catVector);
+            if (score > maxScore) {
+                maxScore = score;
+                bestCategory = category;
+            }
+        }
+
+        // 完全に一致する単語がない場合、ランダムにカテゴリを選択
+        if (maxScore === 0 || !bestCategory) {
+            const categories = Object.keys(db.templates);
+            bestCategory = categories[Math.floor(Math.random() * categories.length)];
+        }
+
+        // C. 入力からのパラメータ抽出（文脈理解）
+        // ユーザーが既存の辞書の単語を使っていたら抽出しておく
+        const userParams = { N: [], V: [], A: [], ADV: [] };
+        userTokens.forEach(token => {
+            for (const pos in db.words) {
+                if (db.words[pos].includes(token)) {
+                    userParams[pos].push(token);
+                }
+            }
+        });
+
+        // D. テンプレートの選択と充填
+        const categoryTemplates = db.templates[bestCategory];
+        const selectedTemplate = categoryTemplates[Math.floor(Math.random() * categoryTemplates.length)];
+
+        const responseText = selectedTemplate.replace(/\{([A-Z]+)\}/g, (match, pos) => {
+            // パラメータが抽出されていれば、60%の確率でユーザーの言葉を「オウム返し」して文脈をつなぐ
+            if (userParams[pos] && userParams[pos].length > 0 && Math.random() > 0.4) {
+                return userParams[pos][Math.floor(Math.random() * userParams[pos].length)];
+            }
+            // それ以外は辞書からランダムピックアップ
+            const words = db.words[pos];
+            if (words && words.length > 0) {
+                return words[Math.floor(Math.random() * words.length)];
+            }
+            return match; 
+        });
+
+        return {
+            text: responseText,
+            category: bestCategory,
+            score: maxScore
+        };
+    }
+
+    // UI処理
+    const chatLog = document.getElementById('chat-log');
+    const userInput = document.getElementById('user-input');
+    const sendBtn = document.getElementById('send-btn');
+
+    function appendMessage(sender, text, className, debugInfo = "") {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'message-wrapper';
+        
+        const msgDiv = document.createElement('div');
+        msgDiv.className = `message ${className}`;
+        msgDiv.textContent = text;
+        
+        wrapper.appendChild(msgDiv);
+        
+        if (debugInfo) {
+            const debugDiv = document.createElement('div');
+            debugDiv.className = 'debug-info';
+            debugDiv.textContent = debugInfo;
+            wrapper.appendChild(debugDiv);
+        }
+
+        chatLog.appendChild(wrapper);
+        chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    function handleSend() {
+        const text = userInput.value.trim();
+        if (!text) return;
+        
+        appendMessage('You', text, 'user-msg');
+        userInput.value = '';
+
+        // 少しだけ遅延を入れて人間味を出す
+        setTimeout(() => {
+            const res = generateResponse(text);
+            const debugText = `[Intent: ${res.category} | Vector Score: ${res.score}]`;
+            appendMessage('Bot', res.text, 'bot-msg', debugText);
+        }, 400);
+    }
+
+    sendBtn.addEventListener('click', handleSend);
+    userInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleSend();
+    });
+
+    // 起動
+    init();
+</script>
+</body>
+</html>
