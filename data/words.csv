@@ -1,0 +1,5025 @@
+word,pos
+algorithm,N
+data,N
+system,N
+research,N
+hypothesis,N
+analyze,V
+investigate,V
+propose,V
+implement,V
+demonstrate,V
+significant,A
+robust,A
+novel,A
+complex,A
+rapidly,ADV
+effectively,ADV
+significantly,ADV
+database,N
+network,N
+infrastructure,N
+server,N
+protocol,N
+encryption,N
+authentication,N
+framework,N
+architecture,N
+optimization,N
+deployment,N
+monitoring,N
+repository,N
+pipeline,N
+configure,V
+integrate,V
+develop,V
+test,V
+debug,V
+deploy,V
+scale,V
+migrate,V
+automate,V
+synchronize,V
+validate,V
+optimize,V
+efficient,A
+secure,A
+scalable,A
+reliable,A
+compatible,A
+modular,A
+distributed,A
+concurrently,ADV
+asynchronously,ADV
+dynamically,ADV
+architecture,N
+manufacture,N
+production,N
+facility,N
+equipment,N
+machinery,N
+assembly,N
+component,N
+quality,N
+efficiency,N
+yield,N
+production,V
+fabricate,V
+assemble,V
+operate,V
+maintain,V
+repair,V
+manufacture,V
+control,V
+measure,V
+calibrate,V
+industrial,A
+mechanical,A
+structural,A
+automated,A
+precision,A
+standardized,A
+productive,A
+systematically,ADV
+mechanically,ADV
+precisely,ADV
+clinical,N
+patient,N
+treatment,N
+diagnosis,N
+medication,N
+therapy,N
+protocol,N
+symptom,N
+disease,N
+surgery,N
+examination,N
+prescription,N
+monitor,V
+prescribe,V
+diagnose,V
+treat,V
+recover,V
+rehabilitate,V
+assess,V
+evaluate,V
+care,V
+manage,V
+medical,A
+therapeutic,A
+preventive,A
+diagnostic,A
+clinical,A
+surgical,A
+pharmaceutical,A
+chronic,A
+acute,A
+medically,ADV
+clinically,ADV
+therapeutically,ADV
+transaction,N
+investment,N
+portfolio,N
+capital,N
+asset,N
+liability,N
+revenue,N
+profit,N
+expense,N
+equity,N
+dividend,N
+stock,N
+bond,N
+interest,N
+market,N
+finance,V
+invest,V
+budget,V
+allocate,V
+liquidate,V
+diversify,V
+hedge,V
+leverage,V
+analyze,V
+calculate,V
+report,V
+audit,V
+financial,A
+fiscal,A
+profitable,A
+solvent,A
+liquid,A
+volatile,A
+bearish,A
+bullish,A
+economical,A
+financially,ADV
+fiscally,ADV
+strategically,ADV
+marketing,N
+brand,N
+campaign,N
+customer,N
+audience,N
+demographic,N
+engagement,N
+conversion,N
+retention,N
+acquisition,N
+loyalty,N
+sales,N
+segment,N
+strategy,N
+advertise,V
+promote,V
+brand,V
+market,V
+segment,V
+target,V
+engage,V
+convert,V
+retain,V
+personalize,V
+analyze,V
+creative,A
+strategic,A
+compelling,A
+engaging,A
+persuasive,A
+targeted,A
+relevant,A
+memorable,A
+viral,A
+strategically,ADV
+creatively,ADV
+effectively,ADV
+legal,N
+contract,N
+agreement,N
+clause,N
+liability,N
+compliance,N
+regulation,N
+statute,N
+jurisdiction,N
+litigation,N
+settlement,N
+prosecution,N
+defense,N
+litigate,V
+prosecute,V
+defend,V
+settle,V
+comply,V
+regulate,V
+enforce,V
+contract,V
+negotiate,V
+breach,V
+legal,A
+binding,A
+enforceable,A
+compliant,A
+statutory,A
+jurisdictional,A
+felonious,A
+litigious,A
+legally,ADV
+constitutionally,ADV
+validly,ADV
+agriculture,N
+crop,N
+harvest,N
+soil,N
+livestock,N
+farm,N
+irrigation,N
+pesticide,N
+fertilizer,N
+yield,N
+cultivation,N
+plantation,N
+orchard,N
+cultivate,V
+harvest,V
+irrigate,V
+fertilize,V
+rotate,V
+breed,V
+graze,V
+process,V
+plant,V
+irrigate,V
+agricultural,A
+organic,A
+sustainable,A
+fertile,A
+productive,A
+cultivated,A
+pastoral,A
+seasonal,A
+rural,A
+agriculturally,ADV
+organically,ADV
+sustainably,ADV
+hotel,N
+resort,N
+lodge,N
+guest,N
+accommodation,N
+service,N
+amenity,N
+reservation,N
+booking,N
+reception,N
+concierge,N
+hospitality,N
+tourism,N
+destination,N
+accommodate,V
+reserve,V
+book,V
+check-in,V
+check-out,V
+serve,V
+assist,V
+host,V
+manage,V
+recommend,V
+hospitality,A
+welcoming,A
+luxurious,A
+comfortable,A
+convenient,A
+courteous,A
+attentive,A
+professional,A
+hospitable,A
+warmly,ADV
+courteously,ADV
+professionally,ADV
+energy,N
+power,N
+electricity,N
+fuel,N
+renewable,N
+solar,N
+wind,N
+battery,N
+grid,N
+consumption,N
+efficiency,N
+emission,N
+generate,V
+transmit,V
+distribute,V
+consume,V
+convert,V
+store,V
+recycle,V
+harness,V
+reduce,V
+sustainable,A
+renewable,A
+efficient,A
+clean,A
+fossil,A
+alternative,A
+green,A
+carbon-neutral,A
+eco-friendly,A
+sustainably,ADV
+efficiently,ADV
+cleanly,ADV
+education,N
+student,N
+teacher,N
+curriculum,N
+course,N
+degree,N
+certification,N
+assessment,N
+instruction,N
+learning,N
+discipline,N
+subject,N
+pedagogy,N
+teach,V
+learn,V
+instruct,V
+assess,V
+evaluate,V
+tutor,V
+mentor,V
+educate,V
+graduate,V
+educate,V
+educational,A
+academic,A
+pedagogical,A
+intellectual,A
+scholarly,A
+rigorous,A
+comprehensive,A
+collaborative,A
+analytical,A
+academically,ADV
+pedagogically,ADV
+intellectually,ADV
+transportation,N
+vehicle,N
+passenger,N
+cargo,N
+route,N
+terminal,N
+logistics,N
+delivery,N
+freight,N
+operator,N
+fleet,N
+station,N
+transit,N
+transport,V
+deliver,V
+route,V
+operate,V
+load,V
+unload,V
+navigate,V
+optimize,V
+track,V
+logistics,A
+efficient,A
+timely,A
+reliable,A
+coordinated,A
+strategic,A
+optimized,A
+accessible,A
+punctual,A
+efficiently,ADV
+timely,ADV
+strategically,ADV
+entertainment,N
+performance,N
+audience,N
+venue,N
+production,N
+cast,N
+script,N
+music,N
+choreography,N
+lighting,N
+stage,N
+ticket,N
+perform,V
+entertain,V
+direct,V
+choreograph,V
+compose,V
+produce,V
+create,V
+rehearse,V
+captivate,V
+entertainment,A
+engaging,A
+creative,A
+theatrical,A
+dramatic,A
+musical,A
+spectacular,A
+entertaining,A
+captivating,A
+artistically,ADV
+creatively,ADV
+dramatically,ADV
+mozuku,N
+mekabu,N
+Noto Sans JP,N
+Hiragino Kaku Gothic,N
+ZOZOTOWN,N
+SHEIN,N
+Apple Music,N
+NetEase Music,N
+RouteNote,N
+TuneCore,N
+Akamai,N
+Imperva,N
+i-Filter,N
+Cisco Umbrella,N
+Matsukiyo,N
+Create,N
+Drugstore Mori,N
+Cosmos,N
+Norton,N
+VirusBuster,N
+Kaspersky,N
+kimchi,N
+mentaiko,N
+takoyaki,N
+salmon harasu moromi soy sauce grill,N
+spring roll,N
+RED V-RAPTOR,N
+Sony VENICE,N
+Challenge Touch,N
+Smile Zemi,N
+slacks,N
+skirt,N
+pitfall,N
+cooling pants,N
+motion sickness,N
+drunkenness,N
+laser printer,N
+Risograph,N
+Print Pack,N
+Raksul,N
+sumo,N
+baseball,N
+cauliflower,N
+jump rope,N
+flare stack,N
+langue de chat,N
+Straightener,N
+strainer,N
+hot dog,N
+cold work,N
+chorizo,N
+torso,N
+Shima garlic,N
+island fixture,N
+center delivery,N
+constipation,N
+side bone,N
+backbone,N
+molded cup,N
+World Cup,N
+non-wire,N
+proper loan,N
+concession,N
+filtration operation,N
+urushi tapper,N
+charcoal filter,N
+collateral margin rate,N
+ultrasonic bonding,N
+low rise,N
+localize,V
+octave unison,N
+circulating filtration device,N
+young master,N
+maid,N
+school,N
+untouchable flower,N
+servant,N
+garden,N
+walk,N
+cuisine,N
+corner,N
+carelessness,N
+soup,N
+clothes,N
+kneeling,N
+voice,N
+punishment,N
+negligence,N
+retirement allowance,N
+pale face,N
+forehead,N
+sweat,N
+both hands,N
+chest,N
+ground,N
+cleaning,N
+laundry staff,N
+lips,N
+trees,N
+shadow,N
+moonlight,N
+expression,N
+mistake,N
+Indus River,N
+shabu-shabu,N
+confusion,N
+relief,N
+proposition,N
+magnificent view,N
+hand,N
+night,N
+silence,N
+tension,N
+expectation,N
+foot,N
+meat,N
+procurement,N
+surprise,N
+eyes,N
+body,N
+rigidity,N
+dress,N
+hem,N
+wind,N
+mechanism,N
+stars,N
+river mouth,N
+geography,N
+hunting,N
+training,N
+river surface,N
+prey,N
+warm-up exercise,N
+hunting rifle,N
+cow,N
+grassland,N
+twilight,N
+axe,N
+dissection,N
+kitchen knife,N
+processing,N
+life,N
+internal organs,N
+bloodletting,N
+fur,N
+ritual,N
+hygiene,N
+public zone,N
+distance,N
+domain,N
+organization,N
+government,N
+government agency,N
+name server,N
+signing key,N
+registration,N
+connection,N
+trustworthy domain,N
+attribute jp,N
+subdomain,N
+apex,N
+redundancy,N
+gTLD,N
+cloud,N
+support,N
+postal address,N
+IMSI,N
+telecommunications number,N
+carrier,N
+MVNE,N
+MVNO,N
+MNO,N
+PLMN,N
+eUICC chip,N
+GSMA certificate,N
+LEO satellite,N
+VoNR,N
+router,N
+data communication,N
+voice call,N
+emergency call,N
+illegal radio station,N
+global IPv6 address,N
+APNIC,N
+shared IP,N
+CGNAT,N
+PA address,N
+home router,N
+portable power supply,N
+0ABJ number,N
+IMEI lock,N
+fire alarm system,N
+extinguishing equipment,N
+Diet building,N
+press club,N
+Diet member,N
+helium bus,N
+non-flammable bus,N
+Markov chain,N
+transformer,N
+self-attention,N
+recording,N
+transcription,N
+model,N
+price plan,N
+satellite direct,N
+NTN standard,N
+shareholder meeting,N
+shareholder benefit,N
+SIM card,N
+DDoS battle,N
+resale,N
+flea market platform,N
+network restriction,N
+airport,N
+security checkpoint,N
+X-ray inspection,N
+mobile battery,N
+prohibit,V
+allocate,V
+launch,V
+apologize,V
+lend,V
+bundle,V
+restrict,V
+implement,V
+publish,V
+resonate,V
+record,V
+transcribe,V
+learn,V
+announce,V
+proceed,V
+illegal,A
+portable,A
+sustainable,A
+gigantic,A
+fair,A
+malicious,A
+strategic,A
+exclusive,A
+nationwide,A
+automatically,ADV
+exclusively,ADV
+permanently,ADV
+physically,ADV
+acquisition meeting,N
+IP acquisition,N
+intellectual property,N
+internet protocol,N
+advertising technology,N
+information system department,N
+legal department,N
+meeting room,N
+risk,N
+long-term operation,N
+stability,N
+simulation,N
+partner selection,N
+vendor,N
+system outage,N
+planned power outage,N
+cloud mode,N
+allocation management,N
+dedicated system,N
+district court,N
+JPNIC,N
+trading company,N
+disclosure request,N
+illegal access lawsuit,N
+robot dog,N
+office,N
+pairing,N
+company wifi,N
+static IP setting,N
+DNS setting,N
+WPA2 Enterprise,N
+counter,N
+DHCP server,N
+lease expiration,N
+reassignment,N
+security issue,N
+MAC address spoofing function,N
+UTM certificate issuance function,N
+router,N
+dark knowledge,N
+certificate bypass,N
+DNS hijacking,N
+InfoSphere,N
+fixed IP /8,N
+fixed IP 8 option,N
+/29,N
+application,N
+dismissal,N
+personnel allocation,N
+personnel department,N
+network construction,N
+outside expert,N
+confirm,V
+report,V
+recommend,V
+switch,V
+support,V
+connect,V
+configure,V
+expire,V
+reassign,V
+spoof,V
+relay,V
+apply,V
+sufficient,A
+stable,A
+efficient,A
+cute,A
+related,A
+unauthorized,A
+securely,ADV
+efficiently,ADV
+accidentally,ADV
+bonus episode,N
+Columbus,N
+sea,N
+sea route,N
+new continent,N
+great confusion,N
+bewilderment,N
+crew member,N
+backflip,N
+disguise suit,N
+parka,N
+legal department,N
+C-san,N
+Yui,N
+Tojo,N
+reunion,N
+encounter,N
+voyage,N
+discovery,N
+chaos,N
+costume,N
+unveiling,N
+friendship,N
+time and space,N
+transcendence,N
+sail,V
+meet,V
+confuse,V
+disguise,V
+take off,V
+greet,V
+reunite,V
+flip,V
+transcend,V
+sail through,V
+lovely,A
+confused,A
+chaotic,A
+nostalgic,A
+surprising,A
+special,A
+all routes lead to,N
+family court,N
+royal family,N
+marriage relationship,N
+hearing,N
+palace,N
+summoning room,N
+hero,N
+king,N
+throne,N
+knight,N
+goddess blessing,N
+subpoena,N
+summons warrant,N
+court summoning beast,N
+judicial qualification,N
+electric shock,N
+bar exam,N
+judicial training,N
+practical experience,N
+law firm,N
+tent,N
+signboard,N
+property damage,N
+compensation claim,N
+tax law,N
+donation,N
+inclusion in deductible expenses,N
+evidence documents,N
+land registry transcript,N
+co-owned property,N
+gavel,N
+judgment,N
+bigamy,N
+invalidity confirmation lawsuit,N
+public order and morals,N
+Supreme Court precedent,N
+consolation money,N
+skill acquisition,N
+experience points,N
+copyright infringement,N
+musical score,N
+unauthorized reproduction,N
+distribution,N
+plaintiff,N
+Magical Demon Castle Facilities Inc.,N
+lyrics,N
+composition,N
+reproduction right,N
+performance right,N
+fan activity,N
+private use,N
+for-profit purpose,N
+restriction provision,N
+settlement,N
+apology advertisement,N
+waiver of damages,N
+copyright law practice,N
+unlawful entry,N
+lawsuit,N
+establish,V
+hear,V
+summon,V
+contract,V
+qualify,V
+take exam,V
+open business,V
+damage,V
+claim,V
+supplement,V
+acquire,V
+reproduce,V
+distribute,V
+waive,V
+trespass,V
+file suit,V
+invalid,A
+illegal,A
+unmarried,A
+for-profit,A
+unauthorized,A
+valid,A
+Japanese law-based,A
+judicially,ADV
+validly,ADV
+publicly,ADV
+morning,N
+law firm,N
+schedule book,N
+inheritance trouble,N
+contract review,N
+bar exam preparation,N
+toilet,N
+light,N
+current world,N
+house toilet,N
+tile,N
+toilet seat,N
+washlet,N
+mirror,N
+school uniform,N
+mother,N
+breakfast,N
+Thursday,N
+school,N
+cityscape,N
+convenience store,N
+traffic light,N
+telephone pole,N
+slope,N
+stray cat,N
+fireball,N
+classroom,N
+classmate,N
+health room,N
+anemia,N
+notebook,N
+magic book,N
+Six Codes,N
+light sphere,N
+blackboard,N
+Article 709 of Civil Code,N
+tort,N
+infringement of rights,N
+obligation to compensate,N
+magic trick,N
+rooftop,N
+wind cut,N
+empty can,N
+silence magic,N
+cafeteria,N
+portal,N
+robe,N
+simple toilet,N
+schedule,N
+bar exam,N
+transfer,V
+suck in,V
+fall down,V
+reflect,V
+prepare,V
+recall,V
+stretch out,V
+appear,V
+disappear,V
+shoot,V
+float,V
+emerge,V
+prohibit,V
+split,V
+return,V
+get lost,V
+crawl out,V
+freeze,V
+ordinary,A
+familiar,A
+pale,A
+bewildered,A
+excited,A
+rare,A
+secret,A
+reflectively,ADV
+desperately,ADV
+slowly,ADV
+suddenly,ADV
+treatment room,N
+palm of hand,N
+touch of blood,N
+toilet water,N
+hospital,N
+healing,N
+wound,N
+demon lord's law,N
+repulsion,N
+inside of body,N
+silence,N
+doctor,N
+family member,N
+friend,N
+treatment,N
+last words,N
+sound of world,N
+bandage,N
+fist,N
+wall,N
+prayer words,N
+shadow,N
+hospital room,N
+white bed,N
+chest wound,N
+face,N
+chair,N
+legs,N
+apology,N
+throat,N
+bed sheet,N
+white cloth,N
+tears,N
+sobbing,N
+inspector,N
+machine sound,N
+breathing sound,N
+air conditioning sound,N
+coldness,N
+reality,N
+night,N
+city lights,N
+signal,N
+car,N
+flow of people,N
+private belongings,N
+paper fragment,N
+bluish white light,N
+loss,N
+guilt,N
+dark night,N
+wash,V
+remain,V
+repeat,V
+try,V
+break,V
+save,V
+answer,V
+open,V
+tell,V
+hear,V
+stand,V
+suppress,V
+pray,V
+lie down,V
+wipe,V
+sleep,V
+shake,V
+sit down,V
+apologize,V
+tremble,V
+grasp,V
+distort,V
+fall,V
+bury face,V
+leak,V
+resonate,V
+apologize repeatedly,V
+call name,V
+deepen,V
+return,V
+remain alone,V
+exhaust from crying,V
+press forehead,V
+hold,V
+glow,V
+hug tightly,V
+bloody,A
+exhausted,A
+reluctant,A
+hoarse,A
+painful,A
+trembling,A
+cold,A
+quiet,A
+cruel,A
+gentle,A
+faint,A
+warm,A
+many times,ADV
+no longer,ADV
+barely,ADV
+university student,N
+Matsushima University,N
+Faculty of Literature,N
+Department of Human Studies,N
+entrance exam,N
+public recommendation,N
+comprehensive selection,N
+presentation,N
+scholarship student,N
+special student,N
+tuition exemption,N
+convenience store,N
+franchise,N
+business opportunity,N
+hot snack,N
+beverage,N
+National Route 45,N
+assessment,N
+AirPods,N
+think tank,N
+lost property,N
+headquarters,N
+attic,N
+desk,N
+multifunction printer,N
+floor,N
+injury,N
+emergency call,N
+architecture department,N
+pillar,N
+beam,N
+brace,N
+stud,N
+design,N
+fine,N
+commerce department,N
+subscription,N
+inventory management,N
+terms of service,N
+screen recording,N
+WebRTC,N
+object storage,N
+engineer,N
+malware,N
+iSCSI bug,N
+CVSS score,N
+NAS,N
+infection,N
+Law Faculty,N
+guidance,N
+refund,N
+employment,N
+retained earnings,N
+hourly wage,N
+proposal,N
+monitoring,N
+compliance,N
+Microsoft,N
+Google,N
+Intune,N
+Chrome policy,N
+Jamf,N
+iPhone,N
+leasing,N
+data center,N
+rack,N
+halon gas,N
+Equinix,N
+Osaka,N
+special high voltage,N
+power receiving equipment,N
+share house,N
+cohabitation,N
+laboratory,N
+electric bit,N
+love,N
+MRI,N
+molecule,N
+investment,N
+healthcare,N
+affiliated hospital,N
+unconsciousness,N
+radiological technologist,N
+national exam,N
+lecturer,N
+part-time job,N
+screening,N
+Siemens,N
+GE Healthcare,N
+atrial fibrillation,N
+prank,N
+menthol,N
+capsaicin,N
+luxury card,N
+bug bounty,N
+cross-dressing,N
+Mastercard Black Diamond,N
+debit card,N
+Amazon,N
+caviar,N
+hacker,N
+threat actor,N
+hardware store,N
+lumber,N
+single pipe,N
+chicken cutlet,N
+bento box,N
+agriculture,N
+sunflower,N
+bar,N
+Bolognese,N
+gold,N
+gold standard,N
+convertible currency,N
+evaluation meeting,N
+fruit knife,N
+railway company,N
+Beijing,N
+Pyongyang,N
+Matsushima University Station,N
+immigration fee,N
+international brand,N
+JCB,N
+Visa,N
+American Express,N
+3D Secure,N
+fan club,N
+cushion,N
+APT,N
+vulnerability,N
+diamond file,N
+sandpaper,N
+spy,N
+NSO Group,N
+IP range,N
+BGP router,N
+abuse report,N
+HSM,N
+private key,N
+SIM card,N
+eSIM,N
+Amazon Web Services,N
+mobile carrier,N
+MNO,N
+terrestrial digital broadcasting,N
+base station,N
+Nokia,N
+data center,N
+server,N
+Primergy,N
+PowerEdge,N
+Cisco,N
+telephoto lens,N
+satellite,N
+rocket,N
+resolution,N
+storage,N
+thermal printer,N
+QR code,N
+reader,N
+retouch,N
+donation,N
+money gun,N
+cash distribution,N
+FortiGate,N
+maintenance,N
+eBay,N
+DDR5,N
+processor,N
+RISC-IX,N
+SAKURA JIMA,N
+port,N
+SFP+,N
+printed circuit board,N
+Rapidus,N
+hardware,A
+low-level,A
+high-level,A
+expensive,A
+cheap,A
+develop,V
+fall,V
+monitor,V
+propose,V
+refund,V
+build,V
+manage,V
+migrate,V
+invest,V
+recover,V
+laugh,V
+surprise,V
+safely,ADV
+freely,ADV
+secretly,ADV
+suddenly,ADV
+completely,ADV
+I,N
+cat,N
+name,N
+birthplace,N
+memory,N
+dark place,N
+damp place,N
+crying,N
+human,N
+student,N
+ferocious tribe,N
+cooking,N
+eating,N
+palm,N
+feeling,N
+face,N
+decoration,N
+hair,N
+kettle,N
+deformity,N
+center,N
+protrusion,N
+hole,N
+smoke,N
+tobacco,N
+speed,N
+driving,N
+eyes,N
+dizziness,N
+chest,N
+fire,N
+brothers,N
+mother,N
+light,N
+straw,N
+bamboo grass field,N
+pond,N
+food,N
+fence,N
+hole in fence,N
+mansion,N
+fate,N
+shade of a tree,N
+neighbor,N
+calico cat,N
+passage,N
+darkness,N
+hunger,N
+cold,N
+rain,N
+kitchen,N
+servant woman,N
+neck,N
+master,N
+owner,N
+lodging,N
+black hair,N
+nose,N
+dwelling,N
+teacher,N
+profession,N
+school,N
+study room,N
+studying enthusiast,N
+diligent person,N
+nap,N
+book,N
+drool,N
+stomach weakness,N
+skin color,N
+pale yellow,N
+elasticity,N
+large meal,N
+Takadiastase,N
+daily routine,N
+complaint,N
+friend,N
+be born,V
+cry,V
+remember,V
+see,V
+catch,V
+boil,V
+think,V
+lift,V
+feel,V
+decorate,V
+meet,V
+blow,V
+choke,V
+know,V
+sit,V
+operate,V
+move,V
+spin,V
+be saved,V
+fall,V
+hide,V
+crawl out,V
+sit down,V
+consider,V
+try,V
+blow across,V
+darken,V
+decrease,V
+walk around,V
+endure,V
+crawl,V
+enter,V
+sneak in,V
+starve to death,V
+visit,V
+get dark,V
+rain,V
+walk,V
+encounter,V
+grab,V
+throw out,V
+give up,V
+steal,V
+make a noise,V
+twist,V
+gaze,V
+say,V
+go in,V
+abandon,V
+meet rarely,V
+return,V
+stay in,V
+think of,V
+pretend,V
+peek,V
+sleep,V
+read,V
+drip,V
+eat a lot,V
+drink,V
+open,V
+become sleepy,V
+repeat,V
+consider,V
+be able to do,V
+complain,V
+somehow,ADV
+somewhat,ADV
+very,ADV
+recklessly,ADV
+finally,ADV
+suddenly,ADV
+slowly,ADV
+somehow or other,ADV
+at once,ADV
+again,ADV
+secretly,ADV
+all day long,ADV
+often,ADV
+actually,ADV
+sometimes,ADV
+really,ADV
+sensory organ,N
+corneal apex,N
+anterior surface,N
+tunica interna bulbi,N
+posterior surface,N
+retina,N
+corneal epithelium,N
+anterior corneal epithelium,N
+pars caeca retinae,N
+anterior limiting lamina,N
+pars iridica retinae,N
+substantia propria corneae,N
+pars ciliaris retinae,N
+optic nerve,N
+posterior limiting lamina,N
+ora serrata,N
+internal of eyeball,N
+corneal endothelium,N
+posterior corneal epithelium,N
+pars optica retinae,N
+prelaminar part of lamina cribrosa,N
+tunica vasculosa bulbi,N
+uvea,N
+optic disc,N
+optic papilla,N
+intralaminar part,N
+tunica media bulbi,N
+choroid,N
+cup of disc,N
+postlaminar part,N
+suprachoroid lamina,N
+macula lutea,N
+orbital part,N
+lamina vasculosa,N
+fovea centralis,N
+intracanalicular part,N
+optic canal part,N
+vascular lamella,N
+foveola,N
+intracranial part,N
+choriocapillary lamella,N
+pigment layer,N
+external sheath of optic nerve,N
+basal lamina,N
+pigmented epithelium of iris,N
+internal sheath of optic nerve,N
+choroidal vessels,N
+pigmented epithelium of ciliary body,N
+intersheath space,N
+ciliary body,N
+pigmented epithelium of retina,N
+eyeball,N
+anterior pole,N
+corona ciliaris,N
+neural layer,N
+posterior pole,N
+ciliary processes,N
+photoreceptor layer,N
+equator,N
+plicae ciliares,N
+outer limiting membrane,N
+meridian,N
+orbiculus ciliaris,N
+outer granular layer,N
+external axis of eyeball,N
+ciliary muscle,N
+outer plexiform layer,N
+internal axis of eyeball,N
+meridional fibers,N
+bipolar cell layer,N
+visual axis,N
+longitudinal fibers,N
+inner granular layer,N
+anterior segment of eyeball,N
+radial fibers,N
+inner plexiform layer,N
+posterior segment of eyeball,N
+circular fibers,N
+ganglion cell layer,N
+optic vesicle,N
+basal plate,N
+ganglionic layer,N
+optic cup,N
+iris,N
+nerve fiber layer,N
+fibrous tunic of eyeball,N
+pupillary margin,N
+inner limiting membrane,N
+sclera,N
+ciliary margin,N
+retinal vessels,N
+scleral sulcus,N
+anterior surface of iris,N
+central retinal artery,N
+trabecular meshwork,N
+pectinate ligament,N
+posterior surface of iris,N
+vascular circle of optic nerve,N
+corneoscleral junction,N
+major circulus iridis,N
+superolateral artery,N
+uveal part,N
+minor circulus iridis,N
+inferolateral artery,N
+scleral spur,N
+iris folds,N
+superomedial artery,N
+scleral venous sinus,N
+pupil,N
+inferomedial artery,N
+suprachoroid lamina of sclera,N
+stroma of iris,N
+supramacular artery,N
+substantia propria sclerae,N
+sphincter pupillae muscle,N
+inframacular artery,N
+lamina fusca sclerae,N
+dilator pupillae muscle,N
+medial retinal artery,N
+lamina cribrosa sclerae,N
+pigment epithelium of iris,N
+middle macular artery,N
+cornea,N
+pectinate ligament of iridocorneal angle,N
+central retinal vein,N
+conjunctival limbus,N
+trabecular meshwork of iridocorneal angle,N
+superolateral vein,N
+limbus corneae,N
+major arterial circle of iris,N
+inferolateral vein,N
+anterior chamber,N
+aqueous humor,N
+iridocorneal angle,N
+posterior chamber,N
+vitreous body,N
+vitreous artery,N
+vitreous canal,N
+vitreous fossa,N
+vitreous membrane,N
+vitreous stroma,N
+vitreous humor,N
+lens,N
+lens substance,N
+lens cortex,N
+lens nucleus,N
+lens fibers,N
+lens epithelium,N
+lens capsule,N
+anterior pole of lens,N
+posterior pole of lens,N
+anterior surface of lens,N
+posterior surface of lens,N
+lens axis,N
+lens equator,N
+zonular fibers,N
+ciliary zonule,N
+zonular space,N
+extraocular muscle,N
+orbital muscle,N
+superior rectus muscle,N
+inferior rectus muscle,N
+medial rectus muscle,N
+lateral rectus muscle,N
+common tendinous ring,N
+superior oblique muscle,N
+trochlea,N
+tendon sheath of superior oblique,N
+inferior oblique muscle,N
+levator palpebrae superioris muscle,N
+eyelid,N
+upper eyelid,N
+lower eyelid,N
+palpebral fissure,N
+lateral palpebral commissure,N
+medial palpebral commissure,N
+lateral canthus,N
+medial canthus,N
+eyelash,N
+tarsal plate,N
+tarsal gland,N
+conjunctiva,N
+conjunctival fornix,N
+conjunctival sac,N
+lacrimal apparatus,N
+lacrimal gland,N
+excretory duct,N
+lacrimal canaliculus,N
+lacrimal sac,N
+nasolacrimal duct,N
+inner ear,N
+endolymphatic space,N
+endolymph,N
+perilymphatic space,N
+perilymph,N
+membranous labyrinth,N
+vestibular labyrinth,N
+semicircular canal,N
+anterior semicircular canal,N
+posterior semicircular canal,N
+lateral semicircular canal,N
+ampulla,N
+anterior ampulla,N
+posterior ampulla,N
+lateral ampulla,N
+endolymphatic duct,N
+endolymphatic sac,N
+utricle,N
+saccule,N
+macula,N
+macula utriculi,N
+macula sacculi,N
+otolith membrane,N
+otolith,N
+cochlear labyrinth,N
+scala vestibuli,N
+scala tympani,N
+cochlear duct,N
+spiral organ,N
+organ of Corti,N
+basilar membrane,N
+tectorial membrane,N
+spiral ganglion,N
+cochlea,N
+apex of cochlea,N
+base of cochlea,N
+modiolus,N
+osseous spiral lamina,N
+middle ear,N
+tympanic cavity,N
+tympanic membrane,N
+eardrum,N
+malleus,N
+incus,N
+stapes,N
+head of stapes,N
+auditory ossicle,N
+Eustachian tube,N
+auditory tube,N
+external ear,N
+external acoustic meatus,N
+auricle,N
+ear lobe,N
+helix,N
+antihelix,N
+tragus,N
+antitragus,N
+olfactory organ,N
+nasal mucosa,N
+olfactory part,N
+olfactory gland,N
+gustatory organ,N
+taste bud,N
+taste pore,N
+skin,N
+epidermis,N
+horny layer,N
+granular layer,N
+prickle cell layer,N
+basal layer,N
+dermis,N
+papillary layer,N
+reticular layer,N
+subcutaneous tissue,N
+hair,N
+hair follicle,N
+hair papilla,N
+hair shaft,N
+sebaceous gland,N
+sweat gland,N
+nail,N
+nail bed,N
+nail root,N
+mammary gland,N
+nipple,N
+areola,N
+lactiferous duct,N
+blackout,N
+light up,N
+blackout curtain,N
+preset,N
+first bell,N
+final bell,N
+border curtain,N
+teaser curtain,N
+sound effect,N
+SE,N
+music effect,N
+ME,N
+BGM,N
+etude,N
+role play,N
+improvisational acting,N
+backdrop,N
+black backdrop,N
+large prop,N
+small prop,N
+hand prop,N
+delay,N
+assistance,N
+kagami panel,N
+teaser board,N
+cut in,N
+cut out,N
+fade in,N
+fade out,N
+fade up,N
+fade down,N
+stage microphone,N
+upstage,N
+downstage,N
+stage left,N
+stage right,N
+consumable prop,N
+perishable prop,N
+cue,N
+trigger,N
+house lights,N
+audience lights,N
+Q,N
+cue sheet,N
+dress rehearsal,N
+generalprobe,N
+masking,N
+floor light,N
+gobo light,N
+kill,N
+fix,N
+suspension light,N
+suspension batten,N
+profile spot,N
+fresnel lens,N
+Source Four,N
+3x6 platform,N
+platform,N
+general wash,N
+ground cloth,N
+floor covering,N
+linoleum,N
+lighting plot,N
+ground plan,N
+elevation,N
+weight,N
+counterweight,N
+shaku-kan system,N
+scrim,N
+gauze curtain,N
+ceiling light,N
+front light,N
+ellipsoidal spotlight,N
+stage wing,N
+wing area,N
+leg curtain,N
+tormentor,N
+height,N
+clearance,N
+notes,N
+direction notes,N
+dimmer,N
+dimmer board,N
+fly line,N
+fly rail,N
+clove hitch on pipe,N
+fly out,N
+main curtain,N
+grand drape,N
+stage direction,N
+action description,N
+center split curtain,N
+hammer,N
+mallet,N
+trap room,N
+understage,N
+stage brace,N
+jack,N
+stiffener,N
+cleat board,N
+blocking rehearsal,N
+tech rehearsal,N
+PAR light,N
+PAR can,N
+box leg,N
+platform horse,N
+riser leg,N
+exit,V
+batten,N
+lighting batten,N
+runway,N
+hanamichi,N
+strike,N
+load out,N
+platform,N
+rostrum,N
+folding leg,N
+follow spot,N
+pin spot,N
+follow pinspot,N
+stage manager,N
+prompter,N
+front light,N
+side front light,N
+border light,N
+work light,N
+cyclorama,N
+cyc curtain,N
+cyc light,N
+upper cyc light,N
+lower cyc light,N
+ground row,N
+intermission,N
+interlude,N
+be out of sight,N
+be seen,N
+sightline issue,N
+clear the stage,V
+move out of sight,V
+rehearsal,N
+stage setting,N
+rigging,N
+lighting instrument,N
+color filter,N
+gel,N
+smoke machine,N
+haze,N
+loading entrance,N
+grade report list,N
+mimeograph machine,N
+risograph,N
+copy machine,N
+steering committee,N
+management meeting,N
+poolside supervision,N
+safety monitor,N
+grade-level meeting,N
+customer harassment,N
+k-rasuhara,N
+School Management Council,N
+community school,N
+School Management Liaison Council,N
+school closing day,N
+number of families,N
+child nursing leave,N
+kan-kyu,N
+nursing duty,N
+morning assembly duty,N
+drafting document,N
+kian,N
+planning meeting,N
+kikaku,N
+desk-to-desk instruction,N
+career passport,N
+kyari-pasu,N
+change of weekly holiday,N
+kyu-hen,N
+case conference,N
+approval stamp method,N
+geta-ban,N
+approval,N
+kessai,N
+tasting for school lunch inspection,N
+research promotion committee,N
+ken-sui,N
+official seal,N
+inter-school exchange mail system,N
+school affairs,N
+ko-mu,N
+Child and Family Support Center,N
+National Institute for Educational Policy Research,N
+maternity leave substitute teacher,N
+childcare leave substitute teacher,N
+three-department meeting,N
+four-department meeting,N
+accidental absence,N
+self-assessment,N
+self-declaration,N
+self PR card,N
+Child Guidance Center,N
+jisou,N
+mandatory training,N
+shikkai,N
+preliminary site visit,N
+jittou,N
+lesson plan,N
+teaching plan,N
+staff seating cluster,N
+shima,N
+weekly teaching plan,N
+shuan,N
+abstract copy,N
+shohon,N
+morning staff meeting,N
+shoku-cho,N
+morning briefing,N
+exemption from duty,N
+shoku-men,N
+student observation comments,N
+shoken,N
+time clock punching,N
+dakoku,N
+mixed-age group,N
+tatewari group,N
+single-class grade,N
+school report,N
+investigation report,N
+compensatory leave for overtime,N
+special needs education,N
+tokushi,N
+special recommendation for culture and sports,N
+developmental characteristic,N
+special committee,N
+special needs class,N
+special needs classroom,N
+special duty allowance,N
+tokkin,N
+summer vacation leave,N
+second round recruitment,N
+nijibo,N
+day duty,N
+nitchoku,N
+entrance selection work,N
+nyu-sen,N
+entrance consultation,N
+annual paid leave,N
+nenkyu,N
+assessment criteria,N
+evaluation criteria,N
+document numbering,N
+hatsuban,N
+subcommittee meeting,N
+supplementary reader,N
+fukudoku-hon,N
+service regulations,N
+substitute holiday,N
+furi-kyu,N
+specialized staff without homeroom,N
+proper,N
+school duties division,N
+bunshou,N
+culture and sports special recommendation,N
+separate room,N
+separate room examination,N
+substitute teaching,N
+hokyou,N
+incomplete履修,N
+module lesson,N
+evening staff meeting,N
+yu-kai,N
+dissolution disposal,N
+confidential document disposal,N
+cumulative guidance record,N
+yoro-ku,N
+quarter size drawing paper,N
+eighth size drawing paper,N
+starter pistol,N
+raikan,N
+abbreviated lesson plan,N
+ryaku-an,N
+low-grade paper,N
+waraban paper,N
+split seal,N
+wari-in,N
+municipal educational research association,N
+work shift A/B,N
+Community School,N
+CS,N
+Digital Transformation,N
+DX,N
+KJ method,N
+Main Teacher,N
+MT,N
+Network Attached Storage,N
+NAS,N
+Overdose,N
+OD,N
+On the Job Training,N
+OJT,N
+Occupational Therapist,N
+OT,N
+School Support Staff,N
+SSS,N
+Social Skills Training,N
+SST,N
+School Social Worker,N
+SSW,N
+Speech Therapist,N
+ST,N
+Team Teaching,N
+TT,N
+T1 teacher,N
+T2 teacher,N
+Wet Bulb Globe Temperature,N
+WBGT,N
+Youth Social Worker,N
+YSW,N
+draft,V
+approve,V
+supervise,V
+monitor,V
+inspect school lunch,V
+consult,V
+teach around desks,V
+hold meeting,V
+visit site beforehand,V
+plan lesson,V
+record time,V
+compensate leave,V
+support special needs,V
+serve day duty,V
+number documents,V
+dissolve documents,V
+mandatory,ADV
+necessarily,ADV
+temporarily,ADV
+general provisions,N
+integrated circuit layout design protection regulation,N
+exclusive right,N
+integrated circuit,N
+semiconductor material,N
+substrate,N
+active element,N
+interconnection line,N
+intermediate product,N
+final product,N
+layout design,N
+three-dimensional configuration,N
+right holder,N
+natural person,N
+legal person,N
+unincorporated organization,N
+reproduction,N
+commercial exploitation,N
+import,N
+sale,N
+integrated photonics,N
+quantum integrated circuit,N
+Chinese natural person,N
+foreign enterprise,N
+foreign organization,N
+commercial utilization in China,N
+protection agreement,N
+international treaty,N
+patent agency,N
+patent agent,N
+confidentiality obligation,N
+originality,N
+intellectual labor,N
+conventional design,N
+idea,N
+process,N
+operation method,N
+mathematical concept,N
+intellectual property administration,N
+State Council,N
+good faith principle,N
+abuse of exclusive right,N
+national interest,N
+public interest,N
+monopoly conduct,N
+Anti-Monopoly Law,N
+public service,N
+application for registration,N
+transfer,N
+license,N
+protection period,N
+10 years,N
+15 years,N
+creation completion,N
+death,N
+succession,N
+registration work,N
+authentic creative activity,N
+falsification,N
+national security,N
+confidentiality,N
+application form,N
+copy,N
+drawing,N
+declaration of originality,N
+integrated circuit sample,N
+necessary information,N
+distinctive part,N
+design area,N
+design point,N
+function,N
+application date,N
+postmark date,N
+preliminary examination,N
+statement of opinion,N
+correction,N
+withdrawal,N
+rejection,N
+registration certificate,N
+announcement,N
+reexamination,N
+revocation,N
+court,N
+people's court,N
+irresistible cause,N
+restoration of rights,N
+written contract,N
+recordal,N
+pledge,N
+mortgage,N
+co-owner,N
+ordinary license,N
+personal purpose,N
+evaluation,N
+analysis,N
+research,N
+teaching,N
+independent creation,N
+exhaustion of rights,N
+market placement,N
+state of emergency,N
+extraordinary situation,N
+compulsory license,N
+non-voluntary license,N
+non-commercial use,N
+reasonable royalty,N
+administrative adjudication,N
+legal liability,N
+infringement act,N
+compensation liability,N
+negotiation,N
+mediation,N
+confiscation,N
+destruction,N
+enforcement,N
+actual loss,N
+profit gained by infringer,N
+license fee multiple,N
+intentional infringement,N
+serious circumstance,N
+reasonable expenses,N
+innocent infringer,N
+inventory,N
+previous order,N
+leakage of undisclosed content,N
+Patent Agency Regulation,N
+state secret,N
+trade secret,N
+dereliction of duty,N
+abuse of power,N
+criminal liability,N
+register book,N
+public inspection,N
+electronic version,N
+fee,N
+time limit,N
+statutory holiday,N
+discriminatory measure,N
+retaliatory measure,N
+entry into force,N
+protect,V
+encourage,V
+promote,V
+implement,V
+enhance,V
+create,V
+enjoy,V
+apply for,V
+handle,V
+entrust,V
+comply with,V
+keep confidential,V
+extend to,V
+manage,V
+abuse,V
+exclude competition,V
+restrict competition,V
+strengthen,V
+reproduce,V
+commercially exploit,V
+register,V
+belong to,V
+cooperate,V
+co-create,V
+commission,V
+reward,V
+calculate,V
+transfer,V
+terminate,V
+submit,V
+display clearly,V
+indicate,V
+mail,V
+notify,V
+state opinion,V
+make correction,V
+grant,V
+revoke,V
+request,V
+restore,V
+conclude contract,V
+put on record,V
+share,V
+distribute,V
+evaluate,V
+analyze,V
+research,V
+teach,V
+create independently,V
+remedy,V
+grant non-voluntary license,V
+pay royalty,V
+negotiate,V
+stop infringement,V
+seize,V
+destroy,V
+enforce compulsorily,V
+compensate,V
+continue to exploit commercially,V
+leak,V
+punish,V
+give sanction,V
+investigate criminally,V
+consult register,V
+pay fee,V
+calculate time limit,V
+take measure,V
+original,A
+conventional,A
+intellectual,A
+exclusive,A
+public,A
+reasonable,A
+intentional,A
+serious,A
+illegal,A
+confidential,A
+discriminatory,A
+voluntary,ADV
+independently,ADV
+commercially,ADV
+intentionally,ADV
+reasonably,ADV
+Sapporo,N
+Hakodate,N
+Otaru,N
+Asahikawa,N
+Muroran,N
+Kushiro,N
+Obihiro,N
+Kitami,N
+Yubari,N
+Iwamizawa,N
+Abashiri,N
+Rumoi,N
+Tomakomai,N
+Wakkanai,N
+Bibai,N
+Ashibetsu,N
+Ebetsu,N
+Akabira,N
+Monbetsu,N
+Shibetsu,N
+Nayoro,N
+Mikasa,N
+Nemuro,N
+Chitose,N
+Takikawa,N
+Sunagawa,N
+Utashinai,N
+Fukagawa,N
+Furano,N
+Noboribetsu,N
+Eniwa,N
+Date / Date,N
+Kitahiroshima,N
+Ishikari,N
+Hokuto / Hokuto,N
+Aomori / Aomori,N
+Hirosaki,N
+Hachinohe,N
+Kuroishi,N
+Goshogawara,N
+Towada,N
+Misawa,N
+Mutsu,N
+Tsugaru,N
+Hirakawa,N
+Morioka,N
+Miyako,N
+Ofunato,N
+Hanamaki,N
+Kitakami,N
+Kuji,N
+Tono,N
+Ichinoseki,N
+Rikuzentakata,N
+Kamaishi,N
+Ninohe,N
+Hachimantai,N
+Oshu,N
+Takizawa,N
+Sendai,N
+Ishinomaki,N
+Shiogama,N
+Kesennuma,N
+Shiroishi,N
+Natori,N
+Kakuda,N
+Tagajo,N
+Iwanuma,N
+Tome,N
+Kurihara,N
+Higashimatsushima,N
+Osaki,N
+Tomiya,N
+Akita / Akita,N
+Noshiro,N
+Yokote,N
+Odate,N
+Oga,N
+Yuzawa,N
+Kazuno,N
+Yurihonjo,N
+Katagami,N
+Daisen,N
+Kitaakita,N
+Nikaho,N
+Semboku,N
+Yamagata / Yamagata,N
+Yonezawa,N
+Tsuruoka,N
+Sakata,N
+Shinjo,N
+Sagae,N
+Kaminoyama,N
+Murayama,N
+Nagai,N
+Tendo,N
+Higashine,N
+Obanazawa,N
+Nanyo,N
+Fukushima / Fukushima,N
+Aizuwakamatsu,N
+Koriyama,N
+Iwaki,N
+Shirakawa,N
+Sukagawa,N
+Kitakata,N
+Soma,N
+Nihonmatsu,N
+Tamura,N
+Minamisoma,N
+Motomiya,N
+Mito,N
+Hitachi,N
+Tsuchiura,N
+Koga,N
+Ishioka,N
+Yuki,N
+Ryugasaki,N
+Shimotsuma,N
+Joso,N
+Hitachiota,N
+Takahagi,N
+Kitaibaraki,N
+Kasama,N
+Toride,N
+Ushiku,N
+Tsukuba,N
+Hitachinaka,N
+Kashima,N
+Itako,N
+Moriya,N
+Hitachiomiya,N
+Naka,N
+Chikusei,N
+Bando,N
+Inashiki,N
+Kasumigaura,N
+Sakuragawa,N
+Kamisu,N
+Namegata,N
+Hokota,N
+Tsukubamirai,N
+Omitama,N
+Utsunomiya,N
+Ashikaga,N
+Tochigi / Tochigi,N
+Sano,N
+Kanuma,N
+Nikko,N
+Oyama,N
+Moka,N
+Otawara,N
+Yaita,N
+Nasushiobara,N
+Sakura / Sakura,N
+Nasukarasuyama,N
+Shimotsuke,N
+Maebashi,N
+Takasaki,N
+Kiryu,N
+Isesaki,N
+Ota / Ota,N
+Numata,N
+Tatebayashi,N
+Shibukawa,N
+Fujioka,N
+Tomioka,N
+Annaka,N
+Midori,N
+Saitama / Saitama,N
+Kawagoe,N
+Kumagaya,N
+Kawaguchi,N
+Gyoda,N
+Chichibu,N
+Tokorozawa,N
+Hanno,N
+Kazo,N
+Honjo,N
+Higashimatsuyama,N
+Kasukabe,N
+Sayama,N
+Hanyu,N
+Konosu,N
+Fukaya,N
+Ageo,N
+Soka,N
+Koshigaya,N
+Warabi,N
+Toda,N
+Iruma,N
+Asaka,N
+Shiki,N
+Wako,N
+Niiza,N
+Okegawa,N
+Kuki,N
+Kitamoto,N
+Yashio,N
+Fujimi,N
+Misato / Misato,N
+Hasuda,N
+Sakado,N
+Satte,N
+Tsurugashima,N
+Hidaka,N
+Yoshikawa,N
+Fujimino,N
+Shiraoka,N
+Chiba / Chiba,N
+Choshi,N
+Ichikawa,N
+Funabashi,N
+Tateyama,N
+Kisarazu,N
+Matsudo,N
+Noda,N
+Mobara,N
+Narita,N
+Togane,N
+Asahi / Asahi,N
+Narashino,N
+Kashiwa,N
+Katsuura,N
+Ichihara,N
+Nagareyama,N
+Yachiyo,N
+Abiko,N
+Kamogawa,N
+Kamagaya,N
+Kimitsu,N
+Futtsu,N
+Urayasu,N
+Yotsukaido,N
+Sodegaura,N
+Yachimata,N
+Inzai,N
+Shiroi,N
+Tomisato,N
+Minamiboso,N
+Sosa,N
+Katori,N
+Sanmu,N
+Isumi,N
+Oamishirasato,N
+Hachioji,N
+Tachikawa,N
+Musashino,N
+Mitaka,N
+Ome,N
+Fuchu,N
+Akishima,N
+Chofu,N
+Machida,N
+Koganei,N
+Kodaira,N
+Hino,N
+Higashimurayama,N
+Kokubunji,N
+Kunitachi,N
+Fussa,N
+Komae,N
+Higashiyamato,N
+Kiyose,N
+Higashikurume,N
+Musashimurayama,N
+Tama,N
+Inagi,N
+Hamura,N
+Akiruno,N
+Nishitokyo,N
+Yokohama,N
+Kawasaki,N
+Yokosuka,N
+Hiratsuka,N
+Kamakura,N
+Fujisawa,N
+Odawara,N
+Chigasaki,N
+Zushi,N
+Sagamihara,N
+Miura,N
+Hadano,N
+Atsugi,N
+Yamato,N
+Isehara,N
+Ebina,N
+Zama,N
+Minamiashigara,N
+Ayase,N
+Niigata / Niigata,N
+Nagaoka,N
+Sanjo,N
+Kashiwazaki,N
+Shibata,N
+Ojiya,N
+Kamo,N
+Tokamachi,N
+Mitsuke,N
+Murakami,N
+Tsubame,N
+Itoigawa,N
+Myoko,N
+Gosen,N
+Joetsu,N
+Agano,N
+Sado,N
+Uonuma,N
+Minamiuonuma,N
+Tainai,N
+Toyama / Toyama,N
+Takaoka,N
+Uozu,N
+Himi,N
+Namerikawa,N
+Tonami,N
+Oyabe,N
+Nanto,N
+Imizu,N
+Kurobe,N
+Kanazawa,N
+Nanao,N
+Komatsu,N
+Wajima,N
+Suzu,N
+Kaga,N
+Hakui,N
+Kahoku,N
+Hakusan,N
+Nomi,N
+Nonoichi,N
+Fukui / Fukui,N
+Tsuruga,N
+Obama,N
+Ono / Ono,N
+Katsuyama,N
+Sabae,N
+Awara,N
+Echizen,N
+Sakai,N
+Kofu,N
+Fujiyoshida,N
+Tsuru,N
+Yamanashi / Yamanashi,N
+Otsuki,N
+Nirasaki,N
+Minamialps,N
+Kai,N
+Fuefuki,N
+Uenohara,N
+Koshu,N
+Chuo / Chuo,N
+Nagano / Nagano,N
+Matsumoto,N
+Ueda,N
+Okaya,N
+Iida,N
+Suwa,N
+Suzaka,N
+Komoro,N
+Ina,N
+Komagane,N
+Nakano,N
+Omachi,N
+Iiyama,N
+Chino,N
+Shiojiri,N
+Saku / Saku,N
+Chikuma,N
+Tomi,N
+Azumino,N
+Ashibumi,N
+Atari,N
+Azuchi,N
+Ateyumi,N
+Awasehanare,N
+Itatsuki,N
+Yajiri,N
+Itsukebushi,N
+Ite,N
+Uchiokoshi,N
+Uchikiri,N
+Uchidake,N
+Urazori,N
+Urahagi / Uwahagi,N
+Urahazu / Uwahazu,N
+Uwaoshi,N
+Uwasekiita,N
+Uwazuru,N
+Uwanaribushi,N
+Uwabanare,N
+Enso,N
+Obanare,N
+Omae,N
+Okuribanare,N
+Oshide,N
+Oshidegake,N
+Ochi,N
+Ochigata,N
+Otoya,N
+Kai,N
+Kaizoe,N
+Kaezuru,N
+Kaeya,N
+Kaeyumi,N
+Kagamudo,N
+Kakarudo,N
+Kake / Yugake,N
+Kakeguchi,N
+Kashin-Jotai,N
+Kasumi Mato,N
+Kataire,N
+Katabanare,N
+Kataya,N
+Katte,N
+Kattebanare,N
+Kamikiritsumedo,N
+Kamiza / Joza,N
+Karahazu,N
+Kiza,N
+Kihontai,N
+Kihontaikei,N
+Gyosha,N
+Kiri,N
+Giriko,N
+Kirisage,N
+Kiryoku,N
+Kinteki,N
+Kusune,N
+Kuchiwari,N
+Kurikomi,N
+Geza / Shimoza,N
+Gogushi,N
+Koko,N
+Goju-Jumonji,N
+Godo,N
+Kobanare,N
+Gobu-no-tsume,N
+Sashigata,N
+Zasha,N
+Sashin-Utai,N
+Sadamenoza,N
+Sanju-Jumonji,N
+Zanshin,N
+Sami-ittai,N
+Shikitai,N
+Shikenrei,N
+Shizen-no-hanare,N
+Shitaoshi,N
+Shitagake,N
+Shitakirizumedo,N
+Shitazuru,N
+Shitanaribushi,N
+Shitahagi / Motohagi,N
+Shitsu,N
+Jiman,N
+Shimosekiita,N
+hydrogen,N
+helium,N
+lithium,N
+beryllium,N
+boron,N
+carbon,N
+nitrogen,N
+oxygen,N
+fluorine,N
+neon,N
+sodium,N
+magnesium,N
+aluminium / aluminum,N
+silicon,N
+phosphorus,N
+sulfur,N
+chlorine,N
+argon,N
+potassium,N
+calcium,N
+scandium,N
+titanium,N
+vanadium,N
+chromium,N
+manganese,N
+iron,N
+cobalt,N
+nickel,N
+copper,N
+zinc,N
+gallium,N
+germanium,N
+arsenic,N
+selenium,N
+bromine,N
+krypton,N
+rubidium,N
+strontium,N
+yttrium,N
+zirconium,N
+niobium,N
+molybdenum,N
+technetium,N
+ruthenium,N
+rhodium,N
+palladium,N
+silver,N
+cadmium,N
+indium,N
+tin,N
+antimony,N
+tellurium,N
+iodine,N
+xenon,N
+caesium / cesium,N
+barium,N
+lanthanum,N
+cerium,N
+praseodymium,N
+neodymium,N
+promethium,N
+samarium,N
+europium,N
+gadolinium,N
+terbium,N
+dysprosium,N
+holmium,N
+erbium,N
+thulium,N
+ytterbium,N
+lutetium,N
+hafnium,N
+tantalum,N
+tungsten,N
+rhenium,N
+osmium,N
+iridium,N
+platinum,N
+gold,N
+mercury,N
+thallium,N
+lead,N
+bismuth,N
+polonium,N
+astatine,N
+radon,N
+francium,N
+radium,N
+actinium,N
+thorium,N
+protactinium,N
+uranium,N
+neptunium,N
+plutonium,N
+americium,N
+curium,N
+berkelium,N
+californium,N
+einsteinium,N
+fermium,N
+mendelevium,N
+nobelium,N
+lawrencium,N
+rutherfordium,N
+dubnium,N
+seaborgium,N
+bohrium,N
+hassium,N
+meitnerium,N
+darmstadtium,N
+roentgenium,N
+copernicium,N
+nihonium,N
+flerovium,N
+moscovium,N
+livermorium,N
+tennessine,N
+oganesson,N
+manifold,N
+homology,N
+cohomology,N
+homotopy,N
+sheaf,N
+scheme,N
+stack,N
+topos,N
+functor,N
+natural transformation,N
+adjunction,N
+limit,N
+colimit,N
+Yoneda lemma,N
+spectral sequence,N
+derived category,N
+triangulated category,N
+abelian category,N
+exact sequence,N
+chain complex,N
+simplicial complex,N
+CW complex,N
+fiber bundle,N
+vector bundle,N
+principal bundle,N
+connection,N
+curvature,N
+characteristic class,N
+Chern class,N
+Stiefel-Whitney class,N
+Pontryagin class,N
+Euler class,N
+de Rham cohomology,N
+Hodge theory,N
+Kähler manifold,N
+Calabi-Yau manifold,N
+Riemannian manifold,N
+Lorentzian manifold,N
+symplectic manifold,N
+contact manifold,N
+Poisson manifold,N
+Lie group,N
+Lie algebra,N
+representation,N
+character,N
+Haar measure,N
+Peter-Weyl theorem,N
+Frobenius reciprocity,N
+Lie bracket,N
+universal enveloping algebra,N
+Verma module,N
+highest weight,N
+root system,N
+Weyl group,N
+Dynkin diagram,N
+Kac-Moody algebra,N
+Clifford algebra,N
+spinor,N
+Dirac operator,N
+Atiyah-Singer index theorem,N
+Riemann-Roch theorem,N
+Hirzebruch-Riemann-Roch,N
+Grothendieck-Riemann-Roch,N
+Gauss-Bonnet theorem,N
+Chern-Gauss-Bonnet,N
+Stokes theorem,N
+de Rham theorem,N
+Poincaré duality,N
+Lefschetz fixed point theorem,N
+Brouwer fixed point theorem,N
+Banach fixed point theorem,N
+Schauder fixed point theorem,N
+Hahn-Banach theorem,N
+Banach-Steinhaus theorem,N
+open mapping theorem,N
+closed graph theorem,N
+Riesz representation theorem,N
+Spectral theorem,N
+Gelfand-Naimark theorem,N
+Stone-Weierstrass theorem,N
+Arzela-Ascoli theorem,N
+Tychonoff theorem,N
+Urysohn lemma,N
+Tietze extension theorem,N
+Baire category theorem,N
+Zorn lemma,N
+Axiom of Choice,N
+Continuum Hypothesis,N
+Gödel incompleteness theorem,N
+compactness theorem,N
+Löwenheim-Skolem theorem,N
+ultraproduct,N
+ultrafilter,N
+forcing,N
+large cardinal,N
+measurable cardinal,N
+Banach-Tarski paradox,N
+Hausdorff dimension,N
+Hausdorff measure,N
+Lebesgue measure,N
+Radon measure,N
+Radon-Nikodym theorem,N
+Lebesgue differentiation theorem,N
+dominated convergence theorem,N
+monotone convergence theorem,N
+Fatou lemma,N
+Fubini theorem,N
+Tonelli theorem,N
+Carathéodory extension theorem,N
+Kolmogorov extension theorem,N
+martingale,N
+stopping time,N
+Brownian motion,N
+Ito lemma,N
+Girsanov theorem,N
+Feynman-Kac formula,N
+stochastic differential equation,N
+Markov chain,N
+ergodic theorem,N
+Birkhoff ergodic theorem,N
+von Neumann ergodic theorem,N
+mixing,N
+entropy,N
+Lyapunov exponent,N
+Anosov diffeomorphism,N
+hyperbolic set,N
+Julia set,N
+Mandelbrot set,N
+fractal,N
+Cantor set,N
+Sierpinski gasket,N
+Hausdorff paradox,N
+Riemann zeta function,N
+Dirichlet L-function,N
+modular form,N
+cusp form,N
+Eisenstein series,N
+Hecke operator,N
+Galois representation,N
+elliptic curve,N
+abelian variety,N
+Jacobian variety,N
+Shimura variety,N
+Langlands program,N
+automorphic form,N
+adeles,N
+ideles,N
+class field theory,N
+Brauer group,N
+Galois cohomology,N
+étale cohomology,N
+crystalline cohomology,N
+motivic cohomology,N
+K-theory,N
+algebraic K-theory,N
+topological K-theory,N
+Bott periodicity,N
+cobordism,N
+surgery theory,N
+h-cobordism theorem,N
+s-cobordism theorem,N
+Whitehead torsion,N
+Reidemeister torsion,N
+Seifert surface,N
+knot invariant,N
+Jones polynomial,N
+HOMFLY polynomial,N
+Khovanov homology,N
+Floer homology,N
+Heegaard Floer homology,N
+Donaldson invariant,N
+Seiberg-Witten invariant,N
+Gromov-Witten invariant,N
+mirror symmetry,N
+homological mirror symmetry,N
+SYZ conjecture,N
+Fukaya category,N
+A-infinity category,N
+derived algebraic geometry,N
+perfectoid space,N
+adic space,N
+Berkovich space,N
+rigid analytic geometry,N
+p-adic Hodge theory,N
+Fontaine theory,N
+Witt vectors,N
+Frobenius endomorphism,N
+crystalline representation,N
+de Rham representation,N
+Hodge-Tate decomposition,N
+Sen theory,N
+Iwasawa theory,N
+Birch and Swinnerton-Dyer conjecture,N
+Hodge conjecture,N
+Tate conjecture,N
+Standard conjectures,N
+Weil conjectures,N
+Ramanujan conjecture,N
+Sato-Tate conjecture,N
+ abc conjecture,N
+Mordell conjecture,N
+Faltings theorem,N
+Mordell-Weil theorem,N
+Siegel theorem,N
+Roth theorem,N
+Thue-Siegel-Roth theorem,N
+Schmidt subspace theorem,N
+Nevanlinna theory,N
+value distribution theory,N
+Picard theorem,N
+Montel theorem,N
+Riemann mapping theorem,N
+uniformization theorem,N
+Koebe quarter theorem,N
+Bieberbach conjecture,N
+de Branges theorem,N
+Paley-Wiener theorem,N
+Phragmén-Lindelöf principle,N
+Hadamard three-circle theorem,N
+Jensen formula,N
+Poisson-Jensen formula,N
+Runge theorem,N
+Mergelyan theorem,N
+Oka principle,N
+Cartan theorem A and B,N
+Dolbeault cohomology,N
+Kodaira vanishing theorem,N
+Kodaira embedding theorem,N
+Nakano vanishing theorem,N
+Kawamata-Viehweg vanishing,N
+Grauert-Riemenschneider vanishing,N
+Mori theory,N
+minimal model program,N
+flip theorem,N
+abundance conjecture,N
+Iitaka fibration,N
+canonical divisor,N
+KLT singularity,N
+log canonical singularity,N
+multiplier ideal,N
+big divisor,N
+nef divisor,N
+ample divisor,N
+very ample divisor,N
+linear system,N
+base locus,N
+blow-up,N
+blow-down,N
+resolution of singularities,N
+Hironaka theorem,N
+embedded resolution,N
+monoidal transformation,N
+birational map,N
+crepant resolution,N
+flop,N
+derived equivalence,N
+Fourier-Mukai transform,N
+semiorthogonal decomposition,N
+exceptional collection,N
+Beilinson collection,N
+tilting theory,N
+cluster algebra,N
+quiver representation,N
+Gabriel theorem,N
+Auslander-Reiten theory,N
+Cohen-Macaulay module,N
+Gorenstein ring,N
+regular local ring,N
+complete intersection,N
+Cohen-Macaulay ring,N
+Koszul complex,N
+local cohomology,N
+Matlis duality,N
+Grothendieck duality,N
+Serre duality,N
+Verdier duality,N
+Poincaré-Verdier duality,N
+six operations,N
+perverse sheaf,N
+intersection cohomology,N
+D-module,N
+Riemann-Hilbert correspondence,N
+holonomic D-module,N
+characteristic variety,N
+b-function,N
+Bernstein-Sato polynomial,N
+Hodge module,N
+mixed Hodge module,N
+variation of Hodge structure,N
+period mapping,N
+Torelli theorem,N
+Schottky problem,N
+Abel-Jacobi map,N
+Albanese variety,N
+Picard variety,N
+Néron-Severi group,N
+Chow group,N
+Chow motive,N
+Voevodsky motive,N
+Bloch-Beilinson conjecture,N
+Beilinson regulator,N
+Milnor K-theory,N
+Galois group,N
+absolute Galois group,N
+profinite group,N
+pro-p group,N
+Sylow theorem,N
+Jordan-Hölder theorem,N
+Schreier refinement theorem,N
+Krull-Schmidt theorem,N
+Wedderburn theorem,N
+Artin-Wedderburn theorem,N
+Maschke theorem,N
+Schur lemma,N
+Nakayama lemma,N
+Artin-Rees lemma,N
+Krull intersection theorem,N
+Hilbert basis theorem,N
+Hilbert syzygy theorem,N
+Hilbert Nullstellensatz,N
+Noether normalization lemma,N
+Going-up theorem,N
+Going-down theorem,N
+Chevalley theorem,N
+Zariski main theorem,N
+Stein factorization,N
+Chevalley-Shephard-Todd theorem,N
+McKay correspondence,N
+Auslander-Buchsbaum formula,N
+Auslander-Buchsbaum-Serre theorem,N
+Serre criterion for normality,N
+Serre criterion for reducedness,N
+Matsumura theorem,N
+Matsusaka big theorem,N
+Matsushima theorem,N
+Kodaira-Spencer map,N
+Kuranishi family,N
+versal deformation,N
+obstruction theory,N
+cotangent complex,N
+Illusie theorem,N
+Lichtenbaum-Schlessinger complex,N
+André-Quillen cohomology,N
+Hochschild cohomology,N
+cyclic homology,N
+periodic cyclic homology,N
+negative cyclic homology,N
+Hochschild-Kostant-Rosenberg theorem,N
+Connes periodicity exact sequence,N
+Karoubi conjecture,N
+Farrell-Jones conjecture,N
+Baum-Connes conjecture,N
+Novikov conjecture,N
+Borel conjecture,N
+Kaplan-sky conjecture,N
+Atiyah conjecture,N
+Lück approximation theorem,N
+Sofic group,N
+hyperlinear group,N
+amenable group,N
+Kazhdan property T,N
+Haagerup property,N
+a-T-menability,N
+von Neumann algebra,N
+C-star algebra,N
+factor,N
+type III factor,N
+Tomita-Takesaki theory,N
+Connes classification,N
+Jones index theorem,N
+Temperley-Lieb algebra,N
+Hecke algebra,N
+Birman-Murakami-Wenzl algebra,N
+quantum group,N
+Yang-Baxter equation,N
+Knizhnik-Zamolodchikov equation,N
+Drinfeld associator,N
+Kontsevich integral,N
+Le-Murakami-Ohtsuki invariant,N
+Reshetikhin-Turaev invariant,N
+Turaev-Viro invariant,N
+Chern-Simons theory,N
+BF theory,N
+TQFT,N
+conformal field theory,N
+vertex operator algebra,N
+affine Lie algebra,N
+Virasoro algebra,N
+W-algebra,N
+Sugawara construction,N
+Gododdard-Kent-Olive construction,N
+coset construction,N
+orbifold construction,N
+Moonshine module,N
+Monstrous moonshine,N
+Borcherds theorem,N
+Kac-Weyl character formula,N
+Weyl-Kac character formula,N
+Macdonald identities,N
+Rogers-Ramanujan identities,N
+Bailey lemma,N
+Andrews-Gordon identities,N
+Littlewood-Richardson rule,N
+Pieri rule,N
+Murnaghan-Nakayama rule,N
+Hook-length formula,N
+Robinson-Schensted correspondence,N
+Knuth equivalence,N
+jeu de taquin,N
+crystal basis,N
+canonical basis,N
+Kazhdan-Lusztig polynomial,N
+Kazhdan-Lusztig conjecture,N
+Beilinson-Bernstein localization,N
+Jantzen filtration,N
+BGG resolution,N
+BGG reciprocity,N
+Soergel bimodule,N
+Soergel conjecture,N
+Elias-Williamson theorem,N
+Hodge theory of Soergel bimodules,N
+Deodhar conjecture,N
+Dyer-Lusztig theory,N
+Deligne-Lusztig theory,N
+Springer correspondence,N
+Springer resolution,N
+Grothendieck-Springer resolution,N
+Steinberg variety,N
+nilpotent cone,N
+Slodowy slice,N
+Kostant section,N
+Hitchin fibration,N
+Hitchin system,N
+Higgs bundle,N
+stable bundle,N
+Narasimhan-Seshadri theorem,N
+Donaldson-Uhlenbeck-Yau theorem,N
+Kobayashi-Hitchin correspondence,N
+Hermitian-Yang-Mills equation,N
+Yang-Mills equation,N
+instanton,N
+monopole,N
+Seiberg-Witten equation,N
+Bogomolny equation,N
+Nahm equation,N
+ADHM construction,N
+twistor theory,N
+Penrose transform,N
+Ward correspondence,N
+Atiyah-Ward correspondence,N
+Kobayashi correspondence,N
+Sato hyperfunction,N
+microfunction,N
+microlocal analysis,N
+wavefront set,N
+pseudodifferential operator,N
+Fourier integral operator,N
+Hörmander theorem,N
+propagation of singularities,N
+Paley-Wiener-Schwartz theorem,N
+Malgrange-Ehrenpreis theorem,N
+Cauchy-Kovalevskaya theorem,N
+Holmgren uniqueness theorem,N
+Carleman estimate,N
+unique continuation property,N
+three spheres inequality,N
+Hadarmard parametrix,N
+heat kernel,N
+zeta regularization,N
+Ray-Singer analytic torsion,N
+Cheeger-Müller theorem,N
+Bismut superconnection,N
+Quillen metric,N
+Arithmetic Riemann-Roch theorem,N
+Arakelov geometry,N
+Faltings height,N
+Gross-Zagier formula,N
+Waldspurger formula,N
+Colmez conjecture,N
+André-Oort conjecture,N
+Manin-Mumford conjecture,N
+Mordell-Lang conjecture,N
+Bogomolov conjecture,N
+Equidistribution theorem,N
+Szpiro conjecture,N
+Vojta conjecture,N
+Green-Tao theorem,N
+Szemerédi theorem,N
+van der Waerden theorem,N
+Hales-Jewett theorem,N
+Furstenberg correspondence principle,N
+Furstenberg structure theorem,N
+Ratner theorem,N
+Margulis superrigidity theorem,N
+Mostow rigidity theorem,N
+Prasad rigidity theorem,N
+Borel density theorem,N
+Godement compactness criterion,N
+Mahler compactness criterion,N
+Selberg trace formula,N
+Arthur-Selberg trace formula,N
+Weyl law,N
+quantum ergodicity theorem,N
+QUE conjecture,N
+Berry-Tabor conjecture,N
+Bohigas-Giannoni-Schmit conjecture,N
+Random matrix theory,N
+Wigner semicircle law,N
+Marchenko-Pastur law,N
+Tracy-Widom distribution,N
+Dyson Brownian motion,N
+SLE,N
+Schramm-Loewner evolution,N
+Cardy formula,N
+Knizhnik-Polyakov-Zamolodchikov formula,N
+KPZ relation,N
+Liouville quantum gravity,N
+Gaussian free field,N
+conformal loop ensemble,N
+imaginary geometry,N
+peanosphere,N
+mating of trees,N
+Brownian map,N
+Brownian continuum random tree,N
+Aldous continuum random tree,N
+Kingman coalescent,N
+Bolthausen-Sznitman coalescent,N
+Lambda-coalescent,N
+Xi-coalescent,N
+lookdown construction,N
+Dawson-Watanabe superprocess,N
+Fleming-Viot process,N
+Wright-Fisher diffusion,N
+Moran process,N
+coalescent process,N
+arsenic,N
+cyanide,N
+strychnine,N
+ricin,N
+botulinum toxin,N
+sarin,N
+mustard gas,N
+phosgene,N
+chlorine gas,N
+hydrogen sulfide,N
+formaldehyde,N
+benzene,N
+chloroform,N
+methanol,N
+phenol,N
+aniline,N
+nicotine,N
+atropine,N
+aconitine,N
+tetrodotoxin,N
+saxitoxin,N
+curare,N
+digoxin,N
+colchicine,N
+potassium cyanide,N
+sodium arsenite,N
+mercuric chloride,N
+thallium sulfate,N
+lead acetate,N
+paraquat,N
+dioxin,N
+polychlorinated biphenyl,N
+hydrogen cyanide,N
+carbon monoxide,N
+phosphine,N
+bromine,N
+iodine,N
+sulfuric acid,N
+hydrochloric acid,N
+nitric acid,N
+sodium hydroxide,N
+potassium hydroxide,N
+ammonia,N
+hydrazine,N
+ethylene glycol,N
+carbon tetrachloride,N
+anatoxin,N
+abrin,N
+heart,N
+blood vessel,N
+artery,N
+capillary,N
+vein,N
+nose,N
+mouth,N
+pharynx,N
+larynx,N
+trachea,N
+bronchus,N
+lung,N
+brain,N
+spinal cord,N
+nerve,N
+skin,N
+hair,N
+nail,N
+muscle,N
+tendon,N
+ligament,N
+bone,N
+joint,N
+esophagus,N
+stomach,N
+small intestine,N
+large intestine,N
+rectum,N
+anus,N
+liver,N
+gallbladder,N
+pancreas,N
+appendix,N
+thyroid gland,N
+parathyroid gland,N
+adrenal gland,N
+pituitary gland,N
+pineal gland,N
+ovary,N
+testis,N
+kidney,N
+ureter,N
+bladder,N
+urethra,N
+penis,N
+prostate gland,N
+seminal vesicle,N
+vas deferens,N
+vagina,N
+cervix,N
+uterus,N
+fallopian tube,N
+entropy,N
+entropic,A
+nonlinear narrative,N
+fragmentation,N
+decentering,N
+indeterminacy,N
+aporia,N
+bifurcation,N
+strange attractor,N
+butterfly effect,N
+fractal,N
+fractal structure,N
+sensitive dependence on initial conditions,N
+phase space,N
+turbulence,N
+self-similarity,N
+rhizome,N
+rhizomatic,A
+deconstruction,N
+palimpsest,N
+heteroglossia,N
+metafiction,N
+metafictional,A
+ontological pluralism,N
+aleatory,A
+apophenia,N
+liminality,N
+liminal space,N
+parallax,N
+semiotic entropy,N
+negative capability,N
+oneiric,A
+mythopoesis,N
+chaotic,A
+dissipative,A
+recursive,A
+aleatoric,A
+labyrinthine,A
+disjunctive,A
+Human Menopausal Gonadotrophin,N
+human pituitary gonadotropin,N
+follicle-stimulating hormone,N
+luteinizing hormone,N
+human chorionic gonadotropin,N
+ovulation induction,N
+controlled ovarian stimulation,N
+ovarian hyperstimulation syndrome,N
+thromboembolism,N
+cerebral infarction,N
+pulmonary embolism,N
+estrogen-dependent malignancy,N
+breast cancer,N
+endometrial cancer,N
+ovarian tumor,N
+polycystic ovary syndrome,N
+ovarian enlargement,N
+active thromboembolic disease,N
+hypersensitivity,N
+hypothalamic amenorrhea,N
+pituitary amenorrhea,N
+assisted reproductive technology,N
+cervical mucus,N
+basal body temperature,N
+ultrasound finding,N
+primary ovarian failure,N
+adrenal dysfunction,N
+thyroid dysfunction,N
+pituitary tumor,N
+anterior pituitary dysfunction,N
+gonadotropin secretion,N
+estrogen-progesterone test,N
+first-degree amenorrhea,N
+second-degree amenorrhea,N
+uterine amenorrhea,N
+serum estradiol concentration,N
+follicular development,N
+oocyte retrieval,N
+multiple pregnancy,N
+twin pregnancy,N
+abortion,N
+anaphylaxis,N
+ovarian rupture,N
+ovarian torsion,N
+pulmonary edema,N
+renal failure,N
+erythema,N
+rash,N
+hot flush,N
+injection site pain,N
+nausea,N
+pollakiuria,N
+numbness,N
+headache,N
+edema,N
+polyuria,N
+intramuscular injection,N
+subcutaneous injection,N
+intravenous injection,A
+self-injection,N
+pituitary gland,N
+hypothalamus,N
+ovary,N
+follicle,N
+corpus luteum,N
+endometrium,N
+cervix,N
+uterus,N
+adrenal gland,N
+thyroid gland,N
+biological product,N
+prescription drug,N
+life insurance,N
+whole life insurance,N
+term life insurance,N
+endowment insurance,N
+variable insurance,N
+universal life,N
+medical insurance,N
+cancer insurance,N
+income protection insurance,N
+personal accident insurance,N
+third-sector insurance,N
+first-sector insurance,N
+second-sector insurance,N
+policy,N
+policyholder,N
+insured person,N
+beneficiary,N
+premium,N
+face amount,N
+coverage,N
+rider,N
+exclusion,N
+waiting period,N
+surrender,N
+lapse,N
+reinstatement,N
+underwriting,N
+disclosure,N
+material misrepresentation,N
+incontestability clause,N
+cooling-off,N
+replacement,N
+churning,N
+twisting,N
+free-look period,N
+agent,N
+solicitor,N
+broker,N
+general agent,N
+captive agent,N
+independent agent,N
+MDRT,N
+TOT,N
+COT,N
+centurion,N
+qualifying member,N
+persistency rate,N
+conservation rate,N
+commission,N
+first-year commission,N
+renewal commission,N
+override commission,N
+chargeback,N
+clawback,N
+target premium,N
+annualized premium,N
+new business,N
+in-force business,N
+orphan policy,N
+orphan client,N
+cross-selling,N
+upselling,N
+referral,N
+cold calling,N
+door-knocking,N
+appointment setting,N
+fact-finding,N
+needs analysis,N
+proposal,N
+closing,N
+one-shot closing,N
+hard close,N
+soft close,N
+objection handling,N
+buying signal,N
+policy audit,N
+estate planning,N
+inheritance tax planning,N
+corporate-owned life insurance,N
+key person insurance,N
+buy-sell agreement,N
+business continuation plan,N
+tax-qualified plan,N
+deemed dividend,N
+insurable interest,N
+moral hazard,N
+adverse selection,N
+field underwriting,N
+impaired risk,N
+substandard risk,N
+declined risk,N
+postponed risk,N
+loading,N
+exclusion rider,N
+conditional contract,N
+aleatory contract,N
+utmost good faith,N
+indemnity principle,N
+subrogation,N
+proximate cause,N
+loss ratio,N
+combined ratio,N
+retention,N
+reinsurance,N
+other world,N
+reincarnation,N
+transmigration,N
+summoning,N
+hero summoning,N
+demon lord,N
+demon king,N
+maou,N
+hero,N
+brave,N
+sage,N
+demon,N
+monster,N
+slime,N
+goblin,N
+orc,N
+dragon,N
+wyvern,N
+undead,N
+lich,N
+vampire,N
+elf,N
+dwarf,N
+beastman,N
+demi-human,N
+fairy,N
+spirit,N
+adventurer,N
+adventurer guild,N
+guild master,N
+quest,N
+subjugation quest,N
+rank,N
+S-rank,A
+A-rank,A
+status,N
+status board,N
+level,N
+level up,V
+experience points,N
+skill,N
+unique skill,N
+cheat skill,N
+appraisal skill,N
+inventory,N
+item box,N
+magic bag,N
+magic,N
+chantless magic,N
+fire magic,N
+water magic,N
+wind magic,N
+earth magic,N
+light magic,N
+dark magic,N
+healing magic,N
+holy magic,N
+forbidden magic,N
+mana,N
+magic power,N
+magic circle,N
+incantation,N
+spell,N
+grimoire,N
+magic stone,N
+magic crystal,N
+magic tool,N
+artifact,N
+holy sword,N
+demon sword,N
+cursed sword,N
+armor,N
+kingdom,N
+empire,N
+holy kingdom,N
+duchy,N
+territory,N
+noble,N
+aristocrat,N
+commoner,N
+slave,N
+slavery,N
+slave trader,N
+church,N
+goddess,N
+god,N
+evil god,N
+blessing,N
+divine protection,N
+fate,N
+destiny,N
+second life,N
+previous life,N
+memory of previous life,N
+overpowered,A
+unrivaled,A
+invincible,A
+stealth,N
+teleportation,N
+another world trip,N
+return magic,N
+adult content,N
+R-18,A
+NSFW,A
+ecchi,A
+hentai,N
+yaoi,N
+yuri,N
+BL,N
+boys love,N
+GL,N
+girls love,N
+TL,N
+M-rated,A
+for mature audiences,A
+suggestive,A
+romance,N
+love scene,N
+kiss scene,N
+Canis lupus familiaris,N
+Felis catus,N
+Mus musculus,N
+Rattus norvegicus,N
+Mesocricetus auratus,N
+Oryctolagus cuniculus,N
+Equus ferus caballus,N
+Bos taurus,N
+Sus scrofa domesticus,N
+Ovis aries,N
+Capra hircus,N
+Gallus gallus domesticus,N
+Anas platyrhynchos domesticus,N
+Anser anser domesticus,N
+Panthera leo,N
+Panthera tigris,N
+Panthera pardus,N
+Loxodonta africana,N
+Giraffa camelopardalis,N
+Equus quagga,N
+Ursus arctos,N
+Canis lupus,N
+Vulpes vulpes,N
+Cervus nippon,N
+Macaca fuscata,N
+Gorilla gorilla,N
+Pan troglodytes,N
+Macropus rufus,N
+Phascolarctos cinereus,N
+Ailuropoda melanoleuca,N
+Megaptera novaeangliae,N
+Tursiops truncatus,N
+Carcharodon carcharias,N
+Enteroctmodel dofleini,N
+Aptenodytes forsteri,N
+Aquila chrysaetos,N
+Passer montanus,N
+Corvus macrorhynchos,N
+Columba livia,N
+Melopsittacus undulatus,N
+Python regius,N
+Lacerta vivipara,N
+Crocodylus niloticus,N
+Chelonia mydas,N
+Rana japonica,N
+Andrias japonicus,N
+Lasius niger,N
+Apis mellifera,N
+Papilio xuthus,N
+Allomyrina dichotoma,N
+Nephila clavata,N
+Portunus trituberculatus,N
+Panulirus japonicus,N
+Aurelia aurita,N
+Asterias amurensis,N
+Panthera onca,N
+Puma concolor,N
+Acinonyx jubatus,N
+Ursus maritimus,N
+Ailurus fulgens,N
+Procyon lotor,N
+Meles meles,N
+Mustela itatsi,N
+Lutra lutra,N
+Phoca largha,N
+Zalophus californianus,N
+Elephas maximus,N
+Rhinoceros unicornis,N
+Hippopotamus amphibius,N
+Camelus dromedarius,N
+Rangifer tarandus,N
+Sus scrofa,N
+Canis latrans,N
+Lycaon pictus,N
+Hyaena hyaena,N
+Suricata suricatta,N
+Felis silvestris,N
+Lynx lynx,N
+Neofelis nebulosa,N
+Uncia uncia,N
+Ursus thibetanus,N
+Helarctos malayanus,N
+Melursus ursinus,N
+Ailuropoda melanoleuca qinlingensis,N
+Nasua nasua,N
+Mephitis mephitis,N
+Gulo gulo,N
+Enhydra lutris,N
+Odobenus rosmarus,N
+Orcinus orca,N
+Physeter macrocephalus,N
+Balaenoptera musculus,N
+Delphinus delphis,N
+Phocoena phocoena,N
+Trichechus manatus,N
+Equus grevyi,N
+Tapirus indicus,N
+Diceros bicornis,N
+Sus barbatus,N
+Babyrousa babyrussa,N
+Tayassu pecari,N
+Lama glama,N
+Vicugna pacos,N
+Giraffa reticulata,N
+Okapi johnstoni,N
+Alces alces,N
+Capreolus capreolus,N
+Odocoileus virginianus,N
+Bison bison,N
+Bubalus bubalis,N
+Syncerus caffer,N
+Tragelaphus oryx,N
+Gazella dorcas,N
+Antilocapra americana,N
+Oryx leucoryx,N
+Capra ibex,N
+Ovis canadensis,N
+Rupicapra rupicapra,N
+Moschus moschiferus,N
+Tragulus javanicus,N
+Manis javanica,N
+Orycteropus afer,N
+Dasypus novemcinctus,N
+Bradypus variegatus,N
+Myrmecophaga tridactyla,N
+Tachyglossus aculeatus,N
+Ornithorhynchus anatinus,N
+Didelphis virginiana,N
+Macropus giganteus,N
+Phalanger orientalis,N
+Vombatus ursinus,N
+Sarcophilus harrisii,N
+Thylacinus cynocephalus,N
+Petrogale xanthopus,N
+Petaurus breviceps,N
+Tarsius syrichta,N
+Lemur catta,N
+Propithecus verreauxi,N
+Daubentonia madagascariensis,N
+Loris tardigradus,N
+Callithrix jacchus,N
+Saguinus oedipus,N
+Alouatta seniculus,N
+Ateles geoffroyi,N
+Cebus capucinus,N
+Saimiri sciureus,N
+Papio anubis,N
+Mandrillus sphinx,N
+Theropithecus gelada,N
+Colobus guereza,N
+Nasalis larvatus,N
+Pongo abelii,N
+Pongo pygmaeus,N
+Gorilla beringei,N
+Pan paniscus,N
+Homo sapiens,N
+Struthio camelus,N
+Dromaius novaehollandiae,N
+Apteryx australis,N
+Spheniscus humboldti,N
+Diomedea exulans,N
+Phoenicopterus roseus,N
+Ciconia boyciana,N
+Ardea alba,N
+Pelecanus onocrotalus,N
+Morus bassanus,N
+Phalacrocorax carbo,N
+Anas platyrhynchos,N
+Cygnus olor,N
+Branta canadensis,N
+Falco peregrinus,N
+Haliaeetus leucocephalus,N
+Gyps fulvus,N
+Bubo bubo,N
+Tyto alba,N
+Psittacus erithacus,N
+Ara macao,N
+Cacatua galerita,N
+Alcedo atthis,N
+Picus awokera,N
+Hirundo rustica,N
+Corvus corax,N
+Parus major,N
+Sturnus vulgaris,N
+Turdus migratorius,N
+Erithacus rubecula,N
+Passer domesticus,N
+Fringilla coelebs,N
+Taeniopygia guttata,N
+Serinus canaria,N
+Grus japonensis,N
+Gallus gallus,N
+Pavo cristatus,N
+Coturnix japonica,N
+Meleagris gallopavo,N
+Sphenodon punctatus,N
+Alligator mississippiensis,N
+Crocodylus porosus,N
+Gavialis gangeticus,N
+Chelonia mydas agassizii,N
+Caretta caretta,N
+Dermochelys coriacea,N
+Testudo graeca,N
+Trachemys scripta elegans,N
+Varanus komodoensis,N
+Heloderma suspectum,N
+Iguana iguana,N
+Chamaeleo calyptratus,N
+Gekko japonicus,N
+Elaphe quadrivirgata,N
+Naja naja,N
+Ophiophagus hannah,N
+Crotalus atrox,N
+Bitis gabonica,N
+Eunectes murinus,N
+Boa constrictor,N
+Python molurus,N
+Xenopus laevis,N
+Rana catesbeiana,N
+Hyla japonica,N
+Bufo japonicus,N
+Ambystoma mexicanum,N
+Salamandra salamandra,N
+Cynops pyrrhogaster,N
+Latimeria chalumnae,N
+Acipenser sturio,N
+Anguilla japonica,N
+Oncorhynchus mykiss,N
+Salmo salar,N
+Thunnus thynnus,N
+Gadus morhua,N
+Hippocampus kuda,N
+Pterois volitans,N
+Amphiprion ocellaris,N
+Carcharhinus leucas,N
+Sphyrna mokarran,N
+Rhincodon typus,N
+Manta birostris,N
+Dasyatis akajei,N
+Electrophorus electricus,N
+Danio rerio,N
+Carassius auratus,N
+Cyprinus carpio,N
+Ictalurus punctatus,N
+Pygocentrus nattereri,N
+Periophthalmus modestus,N
+Anopheles gambiae,N
+Aedes aegypti,N
+Drosophila melanogaster,N
+Bombyx mori,N
+Papilio machaon,N
+Danaus plexippus,N
+Lucanus maculifemoratus,N
+Dynastes hercules,N
+Coccinella septempunctata,N
+Apis cerana japonica,N
+Vespa mandarinia japonica,N
+Camponotus japonicus,N
+Ischnura senegalensis,N
+Gryllus bimaculatus,N
+Locusta migratoria,N
+Mantis religiosa,N
+Blattella germanica,N
+Pediculus humanus,N
+Ixodes persulcatus,N
+Latrodectus hasseltii,N
+Argiope bruennichi,N
+Pandinus imperator,N
+Limulus polyphemus,N
+Homarus americanus,N
+Procambarus clarkii,N
+Euphausia superba,N
+Daphnia pulex,N
+Balanus amphitrite,N
+Octmodel vulgaris,N
+Sepia esculenta,N
+Loligo bleekeri,N
+Haliotis discus discus,N
+Patella vulgata,N
+Mytilus galloprovincialis,N
+Crassostrea gigas,N
+Pinctada fucata,N
+Achatina fulica,N
+Helix pomatia,N
+Lumbricus terrestris,N
+Hirudo medicinalis,N
+Aurelia limbata,N
+Physalia physalis,N
+Acropora digitifera,N
+Actinia equina,N
+Echinaster luzonicus,N
+Strongylocentrotus intermedius,N
+Apostichopus japonicus,N
+Branchiostoma belcheri,N
+Ciona intestinalis,N
+Oikopleura dioica,N
+Myxine glutinosa,N
+Petromyzon marinus,N
+Amblyomma americanum,N
+Aedes albopictus,N
+Culex pipiens,N
+Lucilia sericata,N
+Sarcophaga peregrina,N
+Musca domestica,N
+Tettigonia orientalis,N
+Aquarius paludum,N
+Cicada orni,N
+Cryptotympana facialis,N
+Graptopsaltria nigrofuscata,N
+Nezara viridula,N
+Cimex lectularius,N
+Porphyra yezoensis,N
+Saccharina japonica,N
+Panthera tigris altaica,N
+Panthera leo persica,N
+Canis lupus arctos,N
+Ursus arctos horribilis,N
+Balaenoptera physalus,N
+Balaenoptera acutorostrata,N
+Delphinapterus leucas,N
+Monodon monoceros,N
+Phocoenoides dalli,N
+Eumetopias jubatus,N
+Callorhinus ursinus,N
+Mirounga leonina,N
+Leptonychotes weddellii,N
+Dugong dugon,N
+Loxodonta cyclotis,N
+Ceratotherium simum,N
+Equus przewalskii,N
+Camelus bactrianus,N
+Lama guanicoe,N
+Tragelaphus strepsiceros,N
+Kobus ellipsiprymnus,N
+Connochaetes taurinus,N
+Damaliscus pygargus,N
+Raphicerus campestris,N
+Moschus berezovskii,N
+Muntiacus reevesi,N
+Hydropotes inermis,N
+Elaphurus davidianus,N
+Bison bonasus,N
+Bos grunniens,N
+Bos javanicus,N
+Bubalus depressicornis,N
+Ovis ammon,N
+Capra falconeri,N
+Rupicapra pyrenaica,N
+Budorcas taxicolor,N
+Ovibos moschatus,N
+Saiga tatarica,N
+Giraffa tippelskirchi,N
+Tragulus kanchil,N
+Pecari tajacu,N
+Phacochoerus africanus,N
+Potamochoerus porcus,N
+Choeropsis liberiensis,N
+Hippopotamus amphibius amphibius,N
+Manis pentadactyla,N
+Priodontes maximus,N
+Choloepus didactylus,N
+Tamandua tetradactyla,N
+Zaglossus bruijnii,N
+Tachyglossus aculeatus aculeatus,N
+Dromiciops gliroides,N
+Vombatus ursinus tasmaniensis,N
+Macropus rufogriseus,N
+Wallabia bicolor,N
+Petaurus australis,N
+Acrobates pygmaeus,N
+Trichosurus vulpecula,N
+Phascolomys ursinus,N
+Dasyurus viverrinus,N
+Thylacine cynocephalus extinct,N
+Myrmecobius fasciatus,N
+Notoryctes typhlops,N
+Perameles nasuta,N
+Isoodon obesulus,N
+Macrotis lagotis,N
+Antechinus stuartii,N
+Sminthopsis crassicaudata,N
+Dasycercus cristicauda,N
+Phascogale tapoatafa,N
+Dendrolagus goodfellowi,N
+Hypsiprymnodon moschatus,N
+Bettongia penicillata,N
+Potorous tridactylus,N
+Lagorchestes hirsutus,N
+Onychogalea fraenata,N
+Setonix brachyurus,N
+Thylogale billardierii,N
+Petrogale penicillata,N
+Lagostrophus fasciatus,N
+Caloprymnus campestris,N
+Chaeropus ecaudatus,N
+Peroryctes raffrayana,N
+Echymipera kalubu,N
+Microperoryctes longicauda,N
+Rhynchomeles prattorum,N
+Spilocuscus maculatus,N
+Phalanger gymnotis,N
+Strigops habroptilus,N
+Nestor notabilis,N
+Cyanoramphus novaezelandiae,N
+Psephotus haematonotus,N
+Neophema pulchella,N
+Melopsittacus undulatus wild,N
+Eolophus roseicapilla,N
+Cacatua sulphurea,N
+Probosciger aterrimus,N
+Ara ararauna,N
+Ara chloropterus,N
+Amazona aestiva,N
+Psittacus timneh,N
+Agapornis roseicollis,N
+Melopsittacus undulatus domesticus,N
+Forpus coelestis,N
+Bolborhynchus lineola,N
+Myiopsitta monachus,N
+Pionus menstruus,N
+Poicephalus senegalus,N
+Eclectus roratus,N
+Lorius garrulus,N
+Trichoglossus haematodus,N
+Platycercus eximius,N
+Barnardius zonarius,N
+Neopsephotus bourkii,N
+Cyanoramphus malherbi,N
+Cyanoliseus patagonus,N
+Pyrrhura molinae,N
+Aratinga solstitialis,N
+Diopsittaca nobilis,N
+Primolius maracana,N
+Orthopsittaca manilata,N
+Guaruba guarouba,N
+Leptosittaca branickii,N
+Ognorhynchus icterotis,N
+Rhynchopsitta pachyrhyncha,N
+Bolborhynchus ferrugineifrons,N
+Touit huetii,N
+Brotogeris jugularis,N
+Myiopsitta luchsi,N
+Forpus xanthopterygius,N
+Nannopsittaca dachilleae,N
+Touit costaricensis,N
+bug bounty,N
+vulnerability disclosure,N
+responsible disclosure,N
+coordinated disclosure,N
+bug bounty program,N
+private program,N
+public program,N
+VDP,N
+vulnerability disclosure program,N
+scope,N
+in-scope,N
+out-of-scope,N
+asset,N
+target,N
+domain,N
+subdomain,N
+wildcard scope,N
+safe harbor,N
+SLA,N
+triage,N
+triager,N
+reproduced,A
+triaged,A
+not applicable,A
+informative,A
+duplicate,N
+resolved,A
+reward,N
+bounty,N
+bounty table,N
+severity,N
+critical,A
+high,A
+medium,A
+low,A
+CVSS,N
+CVSS score,N
+impact,N
+exploitability,N
+PoC,N
+proof of concept,N
+reproduction steps,N
+vulnerability report,N
+writeup,N
+reconnaissance,N
+recon,N
+OSINT,N
+subdomain enumeration,N
+port scanning,N
+directory bruteforcing,N
+fuzzing,N
+parameter tampering,N
+IDOR,N
+insecure direct object reference,N
+XSS,N
+cross-site scripting,N
+stored XSS,N
+reflected XSS,N
+DOM XSS,N
+SQL injection,N
+SQLi,N
+SSRF,N
+server-side request forgery,N
+CSRF,N
+cross-site request forgery,N
+RCE,N
+remote code execution,N
+LFI,N
+local file inclusion,N
+RFI,N
+remote file inclusion,N
+XXE,N
+XML external entity,N
+SSTI,N
+server-side template injection,N
+open redirect,N
+business logic flaw,N
+race condition,N
+information disclosure,N
+privilege escalation,N
+authentication bypass,N
+authorization bypass,N
+account takeover,N
+ATO,N
+session fixation,N
+clickjacking,N
+CORS misconfiguration,N
+subdomain takeover,N
+HTTP request smuggling,N
+prototype pollution,N
+deserialization,N
+insecure deserialization,N
+path traversal,N
+command injection,N
+LDAP injection,N
+NoSQL injection,N
+GraphQL injection,N
+mass assignment,N
+API abuse,N
+rate limiting bypass,N
+hacker,N
+white-hat hacker,N
+researcher,N
+hunter,N
+leaderboard,N
+reputation,N
+signal,N
+impact points,N
+Hall of Fame,N
+HOF,N
+first blood,N
+N-day,N
+zero-day,N
+0-day,N
+CVE,N
+CWE,N
+OWASP,N
+OWASP Top 10,N
+Burp Suite,N
+Burp Collaborator,N
+Nuclei,N
+ffuf,N
+dirsearch,N
+Amass,N
+Subfinder,N
+HackerOne,N
+Bugcrowd,N
+Intigriti,N
+YesWeHack,N
+intigriti,N
+Cyclofenil,N
+SEXOVID,N
+ovulation-inducing agent,N
+ovulation induction,N
+first-degree amenorrhea,N
+anovulatory menstruation,N
+oligomenorrhea,N
+progesterone test,N
+withdrawal bleeding,N
+second-degree amenorrhea,N
+hypothalamic dysfunction,N
+anterior pituitary dysfunction,N
+hypogonadotropic anovulation,N
+primary ovarian failure,N
+adrenal dysfunction,N
+thyroid dysfunction,N
+pituitary tumor,N
+intracranial lesion,N
+infertility,N
+estrogen-dependent malignancy,N
+breast cancer,N
+endometrial cancer,N
+ovarian tumor,N
+polycystic ovary syndrome,N
+ovarian enlargement,N
+pregnancy,N
+ovarian hyperstimulation syndrome,N
+multiple pregnancy,N
+basal body temperature,N
+liver dysfunction,N
+jaundice,N
+AST,N
+ALT,N
+gamma-GTP,N
+abdominal pain,N
+ovarian enlargement symptom,N
+irregular bleeding,N
+rash,N
+nausea,N
+vomiting,N
+constipation,N
+diarrhea,N
+anorexia,N
+stomachache,N
+abdominal bloating,N
+headache,N
+dizziness,N
+emotional instability,N
+eye fatigue,N
+hot flush,N
+general malaise,N
+pollakiuria,N
+polyuria,N
+epistaxis,N
+dysgeusia,N
+weight gain,N
+oral administration,N
+repeated administration,N
+chemical name,N
+bisacetoxyphenyl-cyclohexylidenemethane,N
+molecular formula,N
+molecular weight,N
+melting point,N
+crystalline powder,N
+chloroform,N
+dimethylformamide,N
+diethyl ether,N
+methanol,N
+ethanol,N
+PTP packaging,N
+esophageal mucosa,N
+perforation,N
+mediastinitis,N
+gonadotropin-releasing factor,N
+FSH-RH,N
+LH-RH,N
+gonadotropin,N
+FSH,N
+LH,N
+estrogenic action,N
+anti-estrogenic action,N
+stilbestrol,N
+steroidogenesis,N
+desogestrel,N
+ethinyl estradiol,N
+ethinylestradiol,N
+combined oral contraceptive,N
+COC,N
+oral contraceptive,N
+contraceptive drug,N
+menstrual disorder treatment,N
+estrogen-progestin combination,N
+follicular hormone,N
+luteal hormone,N
+progestogen,N
+estrogen,N
+progestin,N
+metabolic enzyme substrate,N
+CYP2C9 substrate,N
+CYP2C19 substrate,N
+CYP3A4 substrate,N
+CYP3A substrate,N
+drug metabolism enzyme,N
+transporter,N
+ATC code,N
+pharmacological classification,N
+hormone agent,N
+mixed hormone preparation,N
+genitourinary agent,N
+contraceptive agent,N
+systemic hormonal contraceptive,N
+combined type,N
+sequential type,N
+generic drug,N
+APRI,N
+AZURETTE,N
+KARIVA,N
+RECLIPSEN,N
+VELIVET,N
+VIORELE,N
+VOLNEA,N
+ENSKYCE,N
+ISIBLOOM,N
+JULEBER,N
+metabolism,N
+interaction,N
+enzyme,N
+imbricate slice,N
+imbricate zone,N
+inlet,N
+wake deposit,N
+wedge slide,N
+wedge mantle,N
+wave base,N
+wavelet processing,N
+water column,N
+washover,N
+wash load,N
+feather fracture,N
+inner shelf,N
+uvala,N
+plumose structure,N
+feather structure,N
+hanging-wall drop fault,N
+mica fish,N
+ecostratigraphy,N
+ecostratigraphic unit,N
+ecozone,N
+aseismic front,N
+sensitive clay,N
+quick clay,N
+disjunction,N
+disjunctive fold,N
+fluidized sediment flow,N
+equilibrium structure,N
+pitted pebble,N
+necrology,N
+S-C structure,N
+S-C mylonite,N
+essexite,N
+epimerization,N
+epiclastic,A
+epidiagenesis,N
+episode,N
+epitaxy,N
+epibole,N
+elongate fan,N
+coastal front,N
+circular slip,N
+salt-water wedge,N
+ductile fault,N
+enterolithic fold,N
+cylindrical dike,N
+telethermal deposit,N
+pencil structure,N
+peripheral fault,N
+recumbent fold,N
+fan fold,N
+pollution plume,N
+retarded creep,N
+delayed fracture,N
+slow earthquake,N
+auto-thanatotope,N
+auto-correlation,N
+auto-biotope,N
+autolith,N
+overgrowth,N
+overstep,N
+overstep thrust sequence,N
+overstep thrust,N
+overlap,N
+overlap zone,N
+offscraping,N
+obstacle scour,N
+offset,N
+offlap,N
+aulacogen,N
+olistostrome,N
+olistolith,N
+orthocumulate,N
+orthochronology,N
+orthostratigraphy,N
+orthoconglomerate,N
+aurora,N
+aurorae,N
+oncoid,N
+oncolite,N
+solfataric clay,N
+ontzone,N
+onlap,N
+onlap surface,N
+sill,N
+outer arc high,N
+outer rise,N
+coastal onlap,N
+spur,N
+knoll,N
+sea knoll,N
+furrow,N
+outer arc,N
+outer arc basin,N
+trench outer ridge,N
+trench-slope basin,N
+trench-fill sediment,N
+trench-fill turbidite,N
+trench landward slope,N
+outlier,N
+transgressive systems tract,N
+transgressive sand,N
+transgressive sand sheet,N
+ravinement surface,N
+transgressive surface of erosion,N
+transgressive lag deposit,N
+transgressive conglomerate,N
+ocean current dominated shelf,N
+step fault,N
+bottom simulating reflector,N
+BSR,N
+guide fossil,N
+marine-flooding surface,N
+release joint,N
+oceanic tholeiite,N
+ocean-floor basalt,N
+oceanic island basalt,N
+oceanic island tholeiite,N
+ocean floor metamorphism,N
+ridge metamorphism,N
+oceanic plate stratigraphy,N
+flame structure,N
+flamboyant texture,N
+chemostratigraphy,N
+brecciated structure,N
+breccia pipe,N
+fire flooding,N
+pyroclastic surge,N
+stoss side,N
+volcanic karst,N
+volcanic neck,N
+volcanic pipe,N
+overfold,N
+overkill hypothesis,N
+casuzone,N
+bedform,N
+downlap,N
+downlap surface,N
+active volcano,N
+active margin,N
+active continental margin,N
+active marginal basin,N
+channel-levee complex,N
+downbuckle,N
+flower structure,N
+interbiohorizon zone,N
+en echelon folds,N
+en echelon arrangement,N
+en echelon joints,N
+en echelon fault,N
+left-handed en echelon,A
+apophysis,N
+Holocene,N
+agglutinate,N
+tubular fold,N
+Cambrian explosion,N
+holostratotype,N
+asthenosphere,N
+pseudomatrix,N
+baselap,N
+mud chip,N
+characteristic earthquake,N
+collage,N
+collage tectonics,N
+root structure,N
+melange,N
+competency,N
+competency contrast,N
+competent fold,N
+competent layer,N
+reworking,N
+reactivation surface,N
+refold,N
+seismite,N
+palimpsest sediment,N
+crenulation fold,N
+recurrence interval,N
+parastratigraphic rock unit,N
+operational unit,N
+degradation vacuity,N
+ebb tidal delta,N
+tear fault,N
+surge sediment,N
+sapropel event,N
+sheath fold,N
+dish structure,N
+triangular facet,N
+industrial lithostratigraphic unit,N
+reference section,N
+hypostratotype,N
+oxygen fugacity,N
+sand wave,N
+sand sheet,N
+sand ribbon,N
+lag gravel,N
+cline,N
+gradation zone,N
+chromosome,N
+chronotaxy,N
+chronotaxis,N
+chronomere,N
+chronolith,N
+chron,N
+assemblage zone,N
+system,N
+system-group,N
+consecutive-range zone,N
+morphogenetic zone,N
+phylozone,N
+phylogenetic zone,N
+lineage zone,N
+crystal bomb,N
+crystal lapilli,N
+chemocline,N
+in-situ reworking,N
+actuakism,N
+high-angle fault,N
+high-angle reverse fault,N
+ethnostratigraphy,N
+archaeomagnetism,N
+archaeopedology,N
+flood basalt,N
+component-stratotype,N
+Diluvium,N
+Pleistocene,N
+tectonic erosion,N
+tectonic earthquake,N
+tectonic melange,N
+shear zone melange,N
+tectonic-stratigraphic terrane,N
+tectonic inversion,N
+regressive overlap,N
+retrogradation,N
+retrogressive metamorphism,N
+backset bed,N
+backset bedding,N
+boundstone,N
+suprabulky fold,N
+hinterland-dipping duplex,N
+lectostratotype,N
+lectotype,N
+coquina,N
+causal stratigraphy,N
+coset,N
+intra-arc basin,N
+commet mark,N
+characteristic earthquake model,N
+competent fold,N
+parasequence,N
+sequence,N
+sequence type,N
+sequence boundary,N
+sequence cycle,N
+sequence stratigraphy,N
+earthquake fault,N
+seismic tomography,N
+underclay,N
+sheeting,N
+sheeting joint,N
+insular shelf,N
+giant impact hypothesis,N
+sharpstone conglomerate,N
+fold mullion,N
+stacking record section,N
+gravitational sliding,N
+gravitational sliding tectonics,N
+gravitational detachment fault,N
+gravity fault,N
+pseudotachylite,N
+out-of-sequence thrust,N
+in-sequence thrust,N
+quasi-flexural folding,N
+impact breccia,N
+shock metamorphism,N
+thrust duplex,N
+onlap surface,N
+parasequence,N
+impact crater,N
+collision tectonics,N
+impact basin,N
+impact structure,N
+aggradation,N
+upward thickening sedimentation,N
+upward coarsening sedimentation,N
+jog,N
+siltite,N
+epicenter,N
+abyssal hill,N
+abyssal basalt,N
+abyssal tholeiite,N
+hypocenter,N
+syngenesis,N
+synthetic fault,N
+synthem,N
+syndiagenesis,N
+syntype,N
+syntaxy,N
+syntaxial,A
+extensional tectonics,N
+extensional duplex,N
+tensile bridge,N
+syn-biotope,N
+neostratotype,N
+synrift basin,N
+quench-fragmentation,N
+swaley cross-stratification,N
+suite,N
+stoss side,N
+stratomere,N
+snowball structure,N
+spiral structure,N
+supersome,N
+superplume,N
+span,N
+splay fault,N
+slab,N
+slab slide,N
+slab penetration,N
+slickenline,N
+slicken step,N
+slow earthquake,N
+swash cross-stratification,N
+swash mark,N
+biointerval zone,N
+orthocumulate,N
+bioseries,N
+growth fault,N
+bioclast,N
+biosparite,N
+bioturbation,N
+secule,N
+segment,N
+segregation,N
+sechron,N
+lobe,N
+lobate delta,N
+set,N
+sediment wave,N
+jointed rock mass,N
+cenozonite,N
+cenozone,N
+foredeep,N
+foreland-dipping duplex,N
+snowball earth,N
+total vacuity,N
+total-range zone,N
+tectonic melange,N
+strike-slip duplex,N
+stratigraphic leakage,N
+intrafolial fold,N
+bedding thrust,N
+mortar texture,N
+palm-tree structure,N
+mountain gravels,N
+amalgamated structure,N
+slow earthquake,N
+transpression,N
+strike-slip duplex,N
+transtension,N
+transverse dip,N
+transverse bending,N
+life-zone,N
+line source,N
+lacuna,N
+lag,N
+lag gravel,N
+radiozone,N
+lapout,N
+ravinement surface,N
+ramp,N
+ramp anticline,N
+anteclise,N
+lithizone,N
+rigid plug,N
+listric fault,N
+rhythmite,N
+offlap,N
+lithogenetic unit,N
+lithostrome,N
+lithosome,N
+lithotype,N
+lithodeme,N
+lithodemic unit,N
+lithotope,N
+ridge and runnel,N
+rip-up clast,N
+retrogradation,N
+rift,N
+rifting,N
+ribbon,N
+raised reefal deposits,N
+propylite,N
+rill,N
+reworking,N
+aggradation,N
+progressive pure shear,N
+progressive simple shear,N
+progressive deformation,N
+progressive metamorphism,N
+zoned ultramafic complex,N
+range-overlap zone,N
+lense,N
+lens fold,N
+rollover,N
+rollover anticline,N
+Walther's law,N
+wave base,N
+wave depth,N
+hypabyssal rock,N
+antidune,N
+inversion structure,N
+inversion tectonics,N
+hummocky cross-stratification,N
+non-Andersonian fault,N
+noncylindrical fold,N
+biotope,N
+piggyback thrust sequence,N
+piggyback thrusts,N
+nonsystematic joint,N
+informal lithostratigraphic unit,N
+microfacies,N
+nontectonic joint,N
+anorogenic andesite,N
+torsion joint,N
+beach ridge,N
+faunule,N
+phase,N
+format,N
+accretionary tectonics,N
+accretionary prism,N
+accretionary wedge,N
+enriched mantle,N
+imbricate structure,N
+imbrication,N
+imbricate slice,N
+imbricate stack,N
+imbricate zone,N
+imbricated thrusts,N
+imbricate fan,N
+composite fold,N
+mixed topostratic unit,N
+composite-stratotype,N
+parastratotype,N
+puddingstone,N
+Bouma sequence,N
+fuel-coolant interaction,N
+partial-range zone,N
+blind fold,N
+blind thrust,N
+fractal,N
+flood zone,N
+flower structure,N
+framboidal structure,N
+pull-apart structure,N
+pull-apart basin,N
+plume tectonics,N
+flake tectonics,N
+flaser bedding,N
+flame structure,N
+pressure shadow,N
+floor thrust,N
+prostratigraphy,N
+prostratic unit,N
+block fold,N
+block folding,N
+block slide,N
+reflecting-block fold,N
+reflecting-block folding,N
+propylite,N
+florule,N
+plane fold,N
+baselap,N
+heteradcumulate,N
+bed forms,N
+hemera,N
+helicitic structure,N
+herringbone structure,N
+herringbone cross lamina,N
+propylite,N
+Vendobionta,N
+expansion fold,N
+expansion folding,N
+homotaxy,N
+ball-and-pillow structure,N
+ball-and-flow structure,N
+bornhardt,N
+holostratic unit,N
+holostrome,N
+holozonite,N
+holosome,N
+holozone,N
+mica fish,N
+mitre fold,N
+magnafacies,N
+mud drape,N
+miosynthem,N
+barren interzone,N
+barren intrazone,N
+barren interval,N
+barren zone,N
+megakink,N
+megakink fold,N
+megasequence,N
+supersequence,N
+megagroup,N
+megaturbidite,N
+megabed,N
+megaplume,N
+megaripple,N
+measures,N
+mesuniscus structure,N
+mesothem,N
+melange,N
+merostratic unit,N
+merozonite,N
+merozone,N
+monothem,N
+monomict,A
+moment,N
+mortar texture,N
+palm-tree structure,N
+mountain gravels,N
+amalgamated structure,N
+transpression,N
+transtension,N
