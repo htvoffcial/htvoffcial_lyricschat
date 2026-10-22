@@ -1,83 +1,87 @@
-name: Fetch and Convert CSV to JSON
+name: Generate JSON from CSV
 
 on:
-  workflow_dispatch: # 手動で実行できるボタンを配置
-  # schedule:
-  #   - cron: '0 0 * * *' # 毎日0時(UTC)に自動更新したい場合はコメントアウトを外す
+  push:
+    paths:
+      - 'data/words.csv'
+      - 'data/ltempl.csv'
+  workflow_dispatch: # GitHubの画面から手動実行できるようにする
 
 permissions:
-  contents: write # リポジトリへのプッシュ権限を付与
+  contents: write # コミットをプッシュするための権限
 
 jobs:
-  convert-and-save:
+  convert-and-commit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout current repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.10'
 
-      - name: Download CSV files from htvoffcial_paper
+      - name: Convert CSV to JSON
         run: |
-          # 別のリポジトリからRawデータを直接ダウンロード (※mainブランチを想定)
-          curl -sL "https://raw.githubusercontent.com/htvoffcial/htvoffcial_paper/main/data/ltempl.csv" -o ltempl.csv
-          curl -sL "https://raw.githubusercontent.com/htvoffcial/htvoffcial_paper/main/data/words.csv" -o words.csv
-
-      - name: Convert CSV to JSON (Optimized for speed)
-        run: |
-          python - <<'EOF'
+          python3 - << 'EOF'
           import csv
           import json
           import os
           from collections import defaultdict
 
-          # 保存先ディレクトリを確保
-          os.makedirs('data', exist_ok=True)
+          data_dir = 'data'
+          if not os.path.exists(data_dir):
+              os.makedirs(data_dir)
 
-          # 1. words.csv の処理
-          words_by_pos = defaultdict(list)
-          with open('words.csv', 'r', encoding='utf-8') as f:
-              reader = csv.DictReader(f)
-              for row in reader:
-                  words_by_pos[row['pos']].append(row['word'])
+          # 1. words.csv を {pos}-words.json に変換
+          words_path = os.path.join(data_dir, 'words.csv')
+          if os.path.exists(words_path):
+              pos_dict = defaultdict(list)
+              with open(words_path, 'r', encoding='utf-8-sig') as f:
+                  reader = csv.DictReader(f)
+                  for row in reader:
+                      pos = row.get('pos', '').strip()
+                      word = row.get('word', '').strip()
+                      if pos and word:
+                          pos_dict[pos].append(word)
+              
+              # 品詞(pos)ごとにJSONファイルを生成
+              for pos, words in pos_dict.items():
+                  out_path = os.path.join(data_dir, f'{pos}-words.json')
+                  with open(out_path, 'w', encoding='utf-8') as f:
+                      # separators=(',', ':') で無駄な空白を省き、最小化(Minify)して出力
+                      json.dump(words, f, ensure_ascii=False, separators=(',', ':'))
 
-          # 品詞(pos)ごとに独立したJSONファイルとして保存
-          # 配列のみの構造にするため、ランダムアクセス(random.choice)が最速になります
-          for pos, words in words_by_pos.items():
-              with open(f'data/{pos}-words.json', 'w', encoding='utf-8') as f:
-                  # separators=(',', ':') で余白を消し、ファイルサイズを最小化(高速読み込み対応)
-                  json.dump(words, f, ensure_ascii=False, separators=(',', ':'))
-
-          # 2. ltempl.csv の処理
-          templates_by_type = defaultdict(list)
-          with open('ltempl.csv', 'r', encoding='utf-8') as f:
-              reader = csv.DictReader(f)
-              for row in reader:
-                  templates_by_type[row['type']].append(row['template'])
-
-          # type をキーとした辞書(Dict)型のJSONに変換
-          # プログラム側で data["title"] のように O(1) で即座に配列を取り出せる構造
-          with open('data/template.json', 'w', encoding='utf-8') as f:
-              json.dump(templates_by_type, f, ensure_ascii=False, separators=(',', ':'))
+          # 2. ltempl.csv を template.json に変換
+          ltempl_path = os.path.join(data_dir, 'ltempl.csv')
+          if os.path.exists(ltempl_path):
+              templ_dict = defaultdict(list)
+              with open(ltempl_path, 'r', encoding='utf-8-sig') as f:
+                  reader = csv.DictReader(f)
+                  for row in reader:
+                      t_type = row.get('type', '').strip()
+                      template = row.get('template', '').strip()
+                      if t_type and template:
+                          templ_dict[t_type].append(template)
+              
+              out_path = os.path.join(data_dir, 'template.json')
+              with open(out_path, 'w', encoding='utf-8') as f:
+                  json.dump(templ_dict, f, ensure_ascii=False, separators=(',', ':'))
           EOF
-
-      - name: Cleanup temporary CSVs
-        run: |
-          rm ltempl.csv words.csv
 
       - name: Commit and Push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # JSONファイルをステージング
           git add data/*.json
           
-          # 変更がある場合のみコミットとプッシュを行う
-          if git diff --staged --quiet; then
-            echo "No changes detected. Skipping commit."
-          else
-            git commit -m "chore: update JSON data from htvoffcial_paper CSVs"
+          # 差分がある場合のみコミット＆プッシュを実行
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: auto-generate JSON from CSV [skip ci]"
             git push
+          else
+            echo "No changes detected. Skipping commit."
           fi
